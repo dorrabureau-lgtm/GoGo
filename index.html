@@ -63,11 +63,8 @@
     .particles {
       position: fixed;
       inset: 0;
-
       pointer-events: none;
-
       overflow: hidden;
-
       z-index: -1;
     }
 
@@ -112,7 +109,6 @@
     ===================================================== */
 
     header {
-
       position: sticky;
       top: 0;
 
@@ -128,7 +124,6 @@
     }
 
     .navbar {
-
       max-width: 1100px;
 
       margin: auto;
@@ -151,7 +146,6 @@
     /* LOGO */
 
     .logo {
-
       display: flex;
 
       align-items: center;
@@ -170,7 +164,6 @@
     }
 
     .logo-icon {
-
       width: 38px;
       height: 38px;
 
@@ -197,7 +190,6 @@
     /* MENU */
 
     .menu {
-
       display: flex;
 
       align-items: center;
@@ -206,7 +198,6 @@
     }
 
     .menu a {
-
       color: #dce6ff;
 
       text-decoration: none;
@@ -222,7 +213,6 @@
     }
 
     .menu a:hover {
-
       background:
         rgba(255,255,255,0.08);
 
@@ -235,7 +225,6 @@
     ===================================================== */
 
     main {
-
       max-width: 1100px;
 
       margin: auto;
@@ -250,7 +239,6 @@
     ===================================================== */
 
     .hero {
-
       min-height:
         calc(100vh - 68px);
 
@@ -268,9 +256,7 @@
         50px 10px;
     }
 
-
     .status {
-
       display: inline-flex;
 
       align-items: center;
@@ -299,7 +285,6 @@
     }
 
     .status-dot {
-
       width: 8px;
       height: 8px;
 
@@ -310,7 +295,6 @@
       box-shadow:
         0 0 12px #55e68a;
     }
-
 
     @keyframes appear {
 
@@ -326,9 +310,7 @@
 
     }
 
-
     .hero h1 {
-
       font-size:
         clamp(52px, 15vw, 105px);
 
@@ -376,9 +358,7 @@
 
     }
 
-
     .hero h2 {
-
       margin-top:
         16px;
 
@@ -392,9 +372,7 @@
         700;
     }
 
-
     .hero p {
-
       max-width:
         650px;
 
@@ -415,13 +393,8 @@
     /* =====================================================
        BOUTONS
     ===================================================== */
-<button id="rewardAdBtn" class="btn primary" onclick="watchRewardedAd()">
-  🎬 Regarder une pub → +10 points
-</button>
 
-<p id="adStatus" style="margin-top:10px;opacity:.8;"></p>
     .hero-buttons {
-
       display:
         flex;
 
@@ -438,9 +411,7 @@
         28px;
     }
 
-
     .btn {
-
       display:
         inline-flex;
 
@@ -482,18 +453,22 @@
 
       transition:
         transform 0.15s,
-        box-shadow 0.15s;
+        box-shadow 0.15s,
+        opacity 0.15s;
     }
 
     .btn:active {
-
       transform:
         scale(0.95);
     }
 
+    .btn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+      transform: none;
+    }
 
     .btn-primary {
-
       background:
         linear-gradient(
           135deg,
@@ -506,9 +481,7 @@
         rgba(52,120,246,0.3);
     }
 
-
     .btn-secondary {
-
       background:
         rgba(255,255,255,0.07);
 
@@ -523,7 +496,6 @@
     ===================================================== */
 
     .stats {
-
       width:
         min(700px, 100%);
 
@@ -540,9 +512,7 @@
         45px;
     }
 
-
     .stat {
-
       padding:
         20px 10px;
 
@@ -557,9 +527,7 @@
         rgba(255,255,255,0.08);
     }
 
-
     .stat-number {
-
       display:
         block;
 
@@ -573,9 +541,7 @@
         #76adff;
     }
 
-
     .stat-label {
-
       display:
         block;
 
@@ -595,14 +561,11 @@
     ===================================================== */
 
     section {
-
       padding:
         85px 0;
     }
 
-
     .section-heading {
-
       text-align:
         center;
 
@@ -610,9 +573,7 @@
         35px;
     }
 
-
     .section-heading small {
-
       color:
         #6da5ff;
 
@@ -629,9 +590,7 @@
         11px;
     }
 
-
     .section-heading h2 {
-
       margin-top:
         9px;
 
@@ -639,9 +598,7 @@
         clamp(30px, 7vw, 45px);
     }
 
-
     .section-heading p {
-
       max-width:
         600px;
 
@@ -661,7 +618,6 @@
     ===================================================== */
 
     .cards {
-
       display:
         grid;
 
@@ -672,9 +628,7 @@
         16px;
     }
 
-
     .card {
-
       position:
         relative;
 
@@ -706,9 +660,7 @@
         border-color 0.25s;
     }
 
-
     .card:hover {
-
       transform:
         translateY(-7px);
 
@@ -716,9 +668,7 @@
         rgba(105,165,255,0.35);
     }
 
-
     .card::after {
-
       content:
         "";
 
@@ -747,9 +697,7 @@
         blur(5px);
     }
 
-
     .card-icon {
-
       width:
         55px;
 
@@ -775,9 +723,7 @@
         18px;
     }
 
-
     .card h3 {
-
       font-size:
         19px;
 
@@ -785,9 +731,7 @@
         9px;
     }
 
-
     .card p {
-
       color:
         #9ca7bc;
 
@@ -804,7 +748,6 @@
     ===================================================== */
 
     .game-box {
-
       max-width:
         700px;
 
@@ -828,9 +771,7 @@
         rgba(255,255,255,0.1);
     }
 
-
     .game-score {
-
       font-size:
         35px;
 
@@ -841,9 +782,7 @@
         #72aaff;
     }
 
-
     .game-text {
-
       margin:
         8px 0 20px;
 
@@ -851,9 +790,7 @@
         #a0abc1;
     }
 
-
     .tap-button {
-
       width:
         150px;
 
@@ -890,16 +827,12 @@
         transform 0.08s;
     }
 
-
     .tap-button:active {
-
       transform:
         scale(0.9);
     }
 
-
     .game-timer {
-
       margin-top:
         18px;
 
@@ -912,11 +845,142 @@
 
 
     /* =====================================================
+       PUBLICITÉ RÉCOMPENSÉE
+    ===================================================== */
+
+    .reward-ad {
+      margin-top:
+        30px;
+
+      padding:
+        22px;
+
+      border-radius:
+        20px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(52,120,246,0.12),
+          rgba(255,255,255,0.035)
+        );
+
+      border:
+        1px solid
+        rgba(105,165,255,0.2);
+    }
+
+    .reward-ad-icon {
+      font-size:
+        38px;
+
+      margin-bottom:
+        8px;
+    }
+
+    .reward-ad h3 {
+      font-size:
+        20px;
+
+      margin-bottom:
+        8px;
+    }
+
+    .reward-ad p {
+      color:
+        #9ca7bc;
+
+      font-size:
+        14px;
+
+      line-height:
+        1.5;
+
+      margin-bottom:
+        17px;
+    }
+
+    .reward-ad-btn {
+      width:
+        100%;
+
+      max-width:
+        360px;
+
+      margin:
+        auto;
+    }
+
+    .ad-status {
+      min-height:
+        20px;
+
+      margin-top:
+        14px;
+
+      color:
+        #9faac2;
+
+      font-size:
+        13px;
+
+      line-height:
+        1.4;
+    }
+
+    .ad-progress {
+      display:
+        none;
+
+      width:
+        100%;
+
+      max-width:
+        360px;
+
+      height:
+        8px;
+
+      margin:
+        15px auto 0;
+
+      border-radius:
+        999px;
+
+      background:
+        rgba(255,255,255,0.08);
+
+      overflow:
+        hidden;
+    }
+
+    .ad-progress-bar {
+      width:
+        0%;
+
+      height:
+        100%;
+
+      border-radius:
+        inherit;
+
+      background:
+        linear-gradient(
+          90deg,
+          #3478f6,
+          #76adff
+        );
+
+      transition:
+        width 1s linear;
+    }
+
+
+    /* =====================================================
        PROFIL
     ===================================================== */
 
     .profile {
-
       max-width:
         700px;
 
@@ -937,9 +1001,7 @@
         rgba(255,255,255,0.09);
     }
 
-
     .profile-top {
-
       display:
         flex;
 
@@ -953,9 +1015,7 @@
         25px;
     }
 
-
     .avatar {
-
       width:
         64px;
 
@@ -985,9 +1045,7 @@
         900;
     }
 
-
     .profile-name {
-
       font-size:
         21px;
 
@@ -995,9 +1053,7 @@
         900;
     }
 
-
     .profile-level {
-
       margin-top:
         5px;
 
@@ -1008,9 +1064,7 @@
         13px;
     }
 
-
     .progress {
-
       height:
         10px;
 
@@ -1024,9 +1078,7 @@
         hidden;
     }
 
-
     .progress-bar {
-
       width:
         0%;
 
@@ -1047,9 +1099,7 @@
         width 0.4s;
     }
 
-
     .progress-info {
-
       display:
         flex;
 
@@ -1072,7 +1122,6 @@
     ===================================================== */
 
     .contact {
-
       text-align:
         center;
 
@@ -1094,9 +1143,7 @@
         rgba(100,165,255,0.18);
     }
 
-
     .contact h2 {
-
       font-size:
         30px;
 
@@ -1104,9 +1151,7 @@
         10px;
     }
 
-
     .contact p {
-
       max-width:
         550px;
 
@@ -1126,7 +1171,6 @@
     ===================================================== */
 
     footer {
-
       padding:
         35px 20px;
 
@@ -1150,7 +1194,6 @@
     ===================================================== */
 
     .notification {
-
       position:
         fixed;
 
@@ -1196,9 +1239,7 @@
         0.3s;
     }
 
-
     .notification.show {
-
       opacity:
         1;
 
@@ -1214,7 +1255,6 @@
     @media (max-width: 720px) {
 
       .navbar {
-
         flex-direction:
           column;
 
@@ -1222,9 +1262,7 @@
           11px 12px;
       }
 
-
       .menu {
-
         width:
           100%;
 
@@ -1232,9 +1270,7 @@
           center;
       }
 
-
       .menu a {
-
         font-size:
           12px;
 
@@ -1242,9 +1278,7 @@
           8px;
       }
 
-
       .hero {
-
         min-height:
           calc(100vh - 100px);
 
@@ -1252,23 +1286,17 @@
           30px;
       }
 
-
       .hero h1 {
-
         letter-spacing:
           -3px;
       }
 
-
       .hero p {
-
         font-size:
           15px;
       }
 
-
       .stats {
-
         gap:
           8px;
 
@@ -1276,39 +1304,34 @@
           35px;
       }
 
-
       .stat {
-
         padding:
           16px 5px;
       }
 
-
       .stat-number {
-
         font-size:
           21px;
       }
 
-
       .cards {
-
         grid-template-columns:
           1fr;
       }
 
-
       section {
-
         padding:
           60px 0;
       }
 
-
       .profile {
-
         padding:
           22px;
+      }
+
+      .reward-ad {
+        padding:
+          18px;
       }
 
     }
@@ -1317,7 +1340,6 @@
     @media (max-width: 400px) {
 
       .menu a {
-
         font-size:
           11px;
 
@@ -1325,16 +1347,12 @@
           0;
       }
 
-
       .logo {
-
         font-size:
           19px;
       }
 
-
       .tap-button {
-
         width:
           130px;
 
@@ -1684,6 +1702,59 @@
             🔄 Réinitialiser
 
           </button>
+
+        </div>
+
+
+        <!-- =================================================
+             PUBLICITÉ RÉCOMPENSÉE
+        ================================================== -->
+
+        <div class="reward-ad">
+
+          <div class="reward-ad-icon">
+            🎬
+          </div>
+
+          <h3>
+            Publicité récompensée
+          </h3>
+
+          <p>
+            Regarde une publicité complète
+            et reçois <strong>+10 GoGo Points</strong>.
+          </p>
+
+
+          <button
+            class="btn btn-primary reward-ad-btn"
+            id="rewardAdBtn"
+            onclick="watchRewardedAd()">
+
+            🎬 Regarder une pub → +10 points
+
+          </button>
+
+
+          <div
+            class="ad-progress"
+            id="adProgress">
+
+            <div
+              class="ad-progress-bar"
+              id="adProgressBar">
+            </div>
+
+          </div>
+
+
+          <div
+            class="ad-status"
+            id="adStatus">
+
+            Appuie sur le bouton pour commencer.
+
+          </div>
 
         </div>
 
@@ -2120,6 +2191,183 @@
 
 
     /* =====================================================
+       PUBLICITÉ RÉCOMPENSÉE
+       +10 POINTS
+    ===================================================== */
+
+    const REWARDED_AD_POINTS = 10;
+
+    let rewardedAdRunning = false;
+
+    let rewardedAdTimer = null;
+
+
+    function watchRewardedAd() {
+
+      if (rewardedAdRunning) {
+        return;
+      }
+
+
+      const button =
+        document.getElementById(
+          "rewardAdBtn"
+        );
+
+
+      const status =
+        document.getElementById(
+          "adStatus"
+        );
+
+
+      const progress =
+        document.getElementById(
+          "adProgress"
+        );
+
+
+      const progressBar =
+        document.getElementById(
+          "adProgressBar"
+        );
+
+
+      rewardedAdRunning =
+        true;
+
+
+      button.disabled =
+        true;
+
+
+      progress.style.display =
+        "block";
+
+
+      let seconds = 10;
+
+
+      progressBar.style.width =
+        "0%";
+
+
+      status.textContent =
+        "🎬 Publicité en cours... 10 secondes";
+
+
+      rewardedAdTimer =
+        setInterval(
+          function () {
+
+            seconds--;
+
+
+            const percentage =
+              ((10 - seconds) / 10) * 100;
+
+
+            progressBar.style.width =
+              percentage + "%";
+
+
+            if (seconds > 0) {
+
+              status.textContent =
+                "🎬 Publicité en cours... " +
+                seconds +
+                " secondes";
+
+            } else {
+
+              clearInterval(
+                rewardedAdTimer
+              );
+
+              rewardedAdTimer =
+                null;
+
+
+              progressBar.style.width =
+                "100%";
+
+
+              giveRewardedAdReward();
+
+            }
+
+          },
+          1000
+        );
+
+    }
+
+
+    /* =====================================================
+       RÉCOMPENSE DE LA PUB
+    ===================================================== */
+
+    function giveRewardedAdReward() {
+
+      const button =
+        document.getElementById(
+          "rewardAdBtn"
+        );
+
+
+      const status =
+        document.getElementById(
+          "adStatus"
+        );
+
+
+      /*
+       * On utilise addPoints()
+       * afin que le profil, le niveau
+       * et localStorage soient
+       * automatiquement mis à jour.
+       */
+
+      addPoints(
+        REWARDED_AD_POINTS
+      );
+
+
+      status.textContent =
+        "✅ Publicité terminée ! " +
+        "+10 GoGo Points ajoutés.";
+
+
+      showNotification(
+        "🎉 Pub terminée ! +10 GoGo Points"
+      );
+
+
+      /*
+       * Petite pause avant de
+       * permettre une nouvelle pub.
+       */
+
+      setTimeout(
+        function () {
+
+          rewardedAdRunning =
+            false;
+
+          button.disabled =
+            false;
+
+          status.textContent =
+            "🎁 Tu peux regarder une nouvelle publicité.";
+
+        },
+        2000
+      );
+
+    }
+
+
+    /* =====================================================
        NOTIFICATIONS
     ===================================================== */
 
@@ -2172,4 +2420,4 @@
   </script>
 
 </body>
-</html> 
+  </html>
