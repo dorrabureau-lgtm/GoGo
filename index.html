@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
 
+  <!-- Google AdSense -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7065876283400939"
+    crossorigin="anonymous"></script>
+
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
@@ -18,10 +23,6 @@
   <title>GoGo — Accueil</title>
 
   <style>
-
-    /* =====================================================
-       RESET
-    ===================================================== */
 
     * {
       box-sizing: border-box;
@@ -55,11 +56,6 @@
       font-family: inherit;
     }
 
-
-    /* =====================================================
-       PARTICULES
-    ===================================================== */
-
     .particles {
       position: fixed;
       inset: 0;
@@ -70,19 +66,14 @@
 
     .particle {
       position: absolute;
-
       width: 4px;
       height: 4px;
-
       background: rgba(120, 180, 255, 0.6);
-
       border-radius: 50%;
-
       animation: floatParticle linear infinite;
     }
 
     @keyframes floatParticle {
-
       from {
         transform: translateY(110vh);
         opacity: 0;
@@ -100,204 +91,109 @@
         transform: translateY(-10vh);
         opacity: 0;
       }
-
     }
-
-
-    /* =====================================================
-       HEADER
-    ===================================================== */
 
     header {
       position: sticky;
       top: 0;
-
       z-index: 100;
-
-      background:
-        rgba(5, 8, 16, 0.82);
-
+      background: rgba(5, 8, 16, 0.82);
       backdrop-filter: blur(18px);
-
-      border-bottom:
-        1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
     .navbar {
       max-width: 1100px;
-
       margin: auto;
-
       min-height: 68px;
-
-      padding:
-        10px 18px;
-
+      padding: 10px 18px;
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
-
       gap: 20px;
     }
 
-
-    /* LOGO */
-
     .logo {
       display: flex;
-
       align-items: center;
-
       gap: 9px;
-
       font-size: 22px;
-
       font-weight: 900;
-
       color: #72aaff;
-
       text-decoration: none;
-
       white-space: nowrap;
     }
 
     .logo-icon {
       width: 38px;
       height: 38px;
-
       display: grid;
-
       place-items: center;
-
       border-radius: 12px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #3478f6,
-          #6f9fff
-        );
-
-      box-shadow:
-        0 0 25px rgba(52,120,246,0.35);
-
+      background: linear-gradient(135deg, #3478f6, #6f9fff);
+      box-shadow: 0 0 25px rgba(52,120,246,0.35);
       font-size: 20px;
     }
 
-
-    /* MENU */
-
     .menu {
       display: flex;
-
       align-items: center;
-
       gap: 7px;
     }
 
     .menu a {
       color: #dce6ff;
-
       text-decoration: none;
-
       font-size: 14px;
-
-      padding:
-        9px 11px;
-
+      padding: 9px 11px;
       border-radius: 9px;
-
       transition: 0.2s;
     }
 
     .menu a:hover {
-      background:
-        rgba(255,255,255,0.08);
-
+      background: rgba(255,255,255,0.08);
       color: white;
     }
 
-
-    /* =====================================================
-       CONTENU
-    ===================================================== */
-
     main {
       max-width: 1100px;
-
       margin: auto;
-
-      padding:
-        0 18px;
+      padding: 0 18px;
     }
 
-
-    /* =====================================================
-       HERO
-    ===================================================== */
-
     .hero {
-      min-height:
-        calc(100vh - 68px);
-
+      min-height: calc(100vh - 68px);
       display: flex;
-
       flex-direction: column;
-
       align-items: center;
-
       justify-content: center;
-
       text-align: center;
-
-      padding:
-        50px 10px;
+      padding: 50px 10px;
     }
 
     .status {
       display: inline-flex;
-
       align-items: center;
-
       gap: 8px;
-
-      padding:
-        8px 14px;
-
+      padding: 8px 14px;
       border-radius: 999px;
-
-      background:
-        rgba(58,129,255,0.1);
-
-      border:
-        1px solid rgba(95,157,255,0.3);
-
+      background: rgba(58,129,255,0.1);
+      border: 1px solid rgba(95,157,255,0.3);
       color: #a9caff;
-
       font-size: 13px;
-
       margin-bottom: 22px;
-
-      animation:
-        appear 0.7s ease;
+      animation: appear 0.7s ease;
     }
 
     .status-dot {
       width: 8px;
       height: 8px;
-
       border-radius: 50%;
-
       background: #55e68a;
-
-      box-shadow:
-        0 0 12px #55e68a;
+      box-shadow: 0 0 12px #55e68a;
     }
 
     @keyframes appear {
-
       from {
         opacity: 0;
         transform: translateY(15px);
@@ -307,45 +203,26 @@
         opacity: 1;
         transform: translateY(0);
       }
-
     }
 
     .hero h1 {
-      font-size:
-        clamp(52px, 15vw, 105px);
-
-      line-height:
-        0.9;
-
-      font-weight:
-        1000;
-
-      letter-spacing:
-        -5px;
-
-      background:
-        linear-gradient(
-          90deg,
-          #ffffff 10%,
-          #77adff 50%,
-          #b6d3ff 90%
-        );
-
-      -webkit-background-clip:
-        text;
-
-      background-clip:
-        text;
-
-      color:
-        transparent;
-
-      animation:
-        heroTitle 0.8s ease;
+      font-size: clamp(52px, 15vw, 105px);
+      line-height: 0.9;
+      font-weight: 1000;
+      letter-spacing: -5px;
+      background: linear-gradient(
+        90deg,
+        #ffffff 10%,
+        #77adff 50%,
+        #b6d3ff 90%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: heroTitle 0.8s ease;
     }
 
     @keyframes heroTitle {
-
       from {
         opacity: 0;
         transform: scale(0.9);
@@ -355,1040 +232,425 @@
         opacity: 1;
         transform: scale(1);
       }
-
     }
 
     .hero h2 {
-      margin-top:
-        16px;
-
-      font-size:
-        clamp(20px, 5vw, 30px);
-
-      color:
-        #d8e4ff;
-
-      font-weight:
-        700;
+      margin-top: 16px;
+      font-size: clamp(20px, 5vw, 30px);
+      color: #d8e4ff;
+      font-weight: 700;
     }
 
     .hero p {
-      max-width:
-        650px;
-
-      margin-top:
-        18px;
-
-      color:
-        #9faac2;
-
-      font-size:
-        16px;
-
-      line-height:
-        1.65;
+      max-width: 650px;
+      margin-top: 18px;
+      color: #9faac2;
+      font-size: 16px;
+      line-height: 1.65;
     }
 
-
-    /* =====================================================
-       BOUTONS
-    ===================================================== */
-
     .hero-buttons {
-      display:
-        flex;
-
-      flex-wrap:
-        wrap;
-
-      justify-content:
-        center;
-
-      gap:
-        12px;
-
-      margin-top:
-        28px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 28px;
     }
 
     .btn {
-      display:
-        inline-flex;
-
-      align-items:
-        center;
-
-      justify-content:
-        center;
-
-      gap:
-        8px;
-
-      min-height:
-        48px;
-
-      padding:
-        13px 20px;
-
-      border:
-        none;
-
-      border-radius:
-        13px;
-
-      color:
-        white;
-
-      font-size:
-        15px;
-
-      font-weight:
-        800;
-
-      text-decoration:
-        none;
-
-      cursor:
-        pointer;
-
-      transition:
-        transform 0.15s,
-        box-shadow 0.15s,
-        opacity 0.15s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 13px 20px;
+      border: none;
+      border-radius: 13px;
+      color: white;
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
     }
 
     .btn:active {
-      transform:
-        scale(0.95);
-    }
-
-    .btn:disabled {
-      opacity: 0.55;
-      cursor: not-allowed;
-      transform: none;
+      transform: scale(0.95);
     }
 
     .btn-primary {
-      background:
-        linear-gradient(
-          135deg,
-          #3478f6,
-          #5794ff
-        );
-
-      box-shadow:
-        0 10px 30px
-        rgba(52,120,246,0.3);
+      background: linear-gradient(135deg, #3478f6, #5794ff);
+      box-shadow: 0 10px 30px rgba(52,120,246,0.3);
     }
 
     .btn-secondary {
-      background:
-        rgba(255,255,255,0.07);
-
-      border:
-        1px solid
-        rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
     }
 
-
-    /* =====================================================
-       STATS
-    ===================================================== */
-
     .stats {
-      width:
-        min(700px, 100%);
-
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
-      gap:
-        12px;
-
-      margin-top:
-        45px;
+      width: min(700px, 100%);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 45px;
     }
 
     .stat {
-      padding:
-        20px 10px;
-
-      border-radius:
-        17px;
-
-      background:
-        rgba(255,255,255,0.045);
-
-      border:
-        1px solid
-        rgba(255,255,255,0.08);
+      padding: 20px 10px;
+      border-radius: 17px;
+      background: rgba(255,255,255,0.045);
+      border: 1px solid rgba(255,255,255,0.08);
     }
 
     .stat-number {
-      display:
-        block;
-
-      font-size:
-        25px;
-
-      font-weight:
-        900;
-
-      color:
-        #76adff;
+      display: block;
+      font-size: 25px;
+      font-weight: 900;
+      color: #76adff;
     }
 
     .stat-label {
-      display:
-        block;
-
-      margin-top:
-        5px;
-
-      color:
-        #8e99b1;
-
-      font-size:
-        12px;
+      display: block;
+      margin-top: 5px;
+      color: #8e99b1;
+      font-size: 12px;
     }
 
-
-    /* =====================================================
-       SECTIONS
-    ===================================================== */
-
     section {
-      padding:
-        85px 0;
+      padding: 85px 0;
     }
 
     .section-heading {
-      text-align:
-        center;
-
-      margin-bottom:
-        35px;
+      text-align: center;
+      margin-bottom: 35px;
     }
 
     .section-heading small {
-      color:
-        #6da5ff;
-
-      font-weight:
-        800;
-
-      text-transform:
-        uppercase;
-
-      letter-spacing:
-        2px;
-
-      font-size:
-        11px;
+      color: #6da5ff;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 11px;
     }
 
     .section-heading h2 {
-      margin-top:
-        9px;
-
-      font-size:
-        clamp(30px, 7vw, 45px);
+      margin-top: 9px;
+      font-size: clamp(30px, 7vw, 45px);
     }
 
     .section-heading p {
-      max-width:
-        600px;
-
-      margin:
-        12px auto 0;
-
-      color:
-        #909bb2;
-
-      line-height:
-        1.5;
+      max-width: 600px;
+      margin: 12px auto 0;
+      color: #909bb2;
+      line-height: 1.5;
     }
 
-
-    /* =====================================================
-       CARTES
-    ===================================================== */
-
     .cards {
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
-      gap:
-        16px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
     }
 
     .card {
-      position:
-        relative;
-
-      padding:
-        25px;
-
-      min-height:
-        200px;
-
-      border-radius:
-        20px;
-
-      background:
-        linear-gradient(
-          145deg,
-          rgba(255,255,255,0.07),
-          rgba(255,255,255,0.025)
-        );
-
-      border:
-        1px solid
-        rgba(255,255,255,0.09);
-
-      overflow:
-        hidden;
-
-      transition:
-        transform 0.25s,
-        border-color 0.25s;
+      position: relative;
+      padding: 25px;
+      min-height: 200px;
+      border-radius: 20px;
+      background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.07),
+        rgba(255,255,255,0.025)
+      );
+      border: 1px solid rgba(255,255,255,0.09);
+      overflow: hidden;
+      transition: transform 0.25s, border-color 0.25s;
     }
 
     .card:hover {
-      transform:
-        translateY(-7px);
-
-      border-color:
-        rgba(105,165,255,0.35);
+      transform: translateY(-7px);
+      border-color: rgba(105,165,255,0.35);
     }
 
     .card::after {
-      content:
-        "";
-
-      position:
-        absolute;
-
-      width:
-        130px;
-
-      height:
-        130px;
-
-      right:
-        -60px;
-
-      bottom:
-        -70px;
-
-      border-radius:
-        50%;
-
-      background:
-        rgba(80,145,255,0.1);
-
-      filter:
-        blur(5px);
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      right: -60px;
+      bottom: -70px;
+      border-radius: 50%;
+      background: rgba(80,145,255,0.1);
+      filter: blur(5px);
     }
 
     .card-icon {
-      width:
-        55px;
-
-      height:
-        55px;
-
-      display:
-        grid;
-
-      place-items:
-        center;
-
-      border-radius:
-        16px;
-
-      background:
-        rgba(62,126,240,0.13);
-
-      font-size:
-        27px;
-
-      margin-bottom:
-        18px;
+      width: 55px;
+      height: 55px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: rgba(62,126,240,0.13);
+      font-size: 27px;
+      margin-bottom: 18px;
     }
 
     .card h3 {
-      font-size:
-        19px;
-
-      margin-bottom:
-        9px;
+      font-size: 19px;
+      margin-bottom: 9px;
     }
 
     .card p {
-      color:
-        #9ca7bc;
-
-      line-height:
-        1.55;
-
-      font-size:
-        14px;
+      color: #9ca7bc;
+      line-height: 1.55;
+      font-size: 14px;
     }
 
-
-    /* =====================================================
-       JEU RAPIDE
-    ===================================================== */
-
     .game-box {
-      max-width:
-        700px;
-
-      margin:
-        auto;
-
-      padding:
-        25px;
-
-      text-align:
-        center;
-
-      border-radius:
-        24px;
-
-      background:
-        rgba(255,255,255,0.05);
-
-      border:
-        1px solid
-        rgba(255,255,255,0.1);
+      max-width: 700px;
+      margin: auto;
+      padding: 25px;
+      text-align: center;
+      border-radius: 24px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
     }
 
     .game-score {
-      font-size:
-        35px;
-
-      font-weight:
-        900;
-
-      color:
-        #72aaff;
+      font-size: 35px;
+      font-weight: 900;
+      color: #72aaff;
     }
 
     .game-text {
-      margin:
-        8px 0 20px;
-
-      color:
-        #a0abc1;
+      margin: 8px 0 20px;
+      color: #a0abc1;
     }
 
     .tap-button {
-      width:
-        150px;
-
-      height:
-        150px;
-
-      border-radius:
-        50%;
-
-      border:
-        0;
-
-      background:
-        linear-gradient(
-          145deg,
-          #3478f6,
-          #6ca5ff
-        );
-
-      color:
-        white;
-
-      font-size:
-        50px;
-
-      cursor:
-        pointer;
-
-      box-shadow:
-        0 15px 50px
-        rgba(52,120,246,0.3);
-
-      transition:
-        transform 0.08s;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 0;
+      background: linear-gradient(145deg, #3478f6, #6ca5ff);
+      color: white;
+      font-size: 50px;
+      cursor: pointer;
+      box-shadow: 0 15px 50px rgba(52,120,246,0.3);
+      transition: transform 0.08s;
     }
 
     .tap-button:active {
-      transform:
-        scale(0.9);
+      transform: scale(0.9);
     }
 
     .game-timer {
-      margin-top:
-        18px;
-
-      color:
-        #8f9ab1;
-
-      font-size:
-        13px;
+      margin-top: 18px;
+      color: #8f9ab1;
+      font-size: 13px;
     }
-
-
-    /* =====================================================
-       PUBLICITÉ RÉCOMPENSÉE
-    ===================================================== */
-
-    .reward-ad {
-      margin-top:
-        30px;
-
-      padding:
-        22px;
-
-      border-radius:
-        20px;
-
-      background:
-        linear-gradient(
-          145deg,
-          rgba(52,120,246,0.12),
-          rgba(255,255,255,0.035)
-        );
-
-      border:
-        1px solid
-        rgba(105,165,255,0.2);
-    }
-
-    .reward-ad-icon {
-      font-size:
-        38px;
-
-      margin-bottom:
-        8px;
-    }
-
-    .reward-ad h3 {
-      font-size:
-        20px;
-
-      margin-bottom:
-        8px;
-    }
-
-    .reward-ad p {
-      color:
-        #9ca7bc;
-
-      font-size:
-        14px;
-
-      line-height:
-        1.5;
-
-      margin-bottom:
-        17px;
-    }
-
-    .reward-ad-btn {
-      width:
-        100%;
-
-      max-width:
-        360px;
-
-      margin:
-        auto;
-    }
-
-    .ad-status {
-      min-height:
-        20px;
-
-      margin-top:
-        14px;
-
-      color:
-        #9faac2;
-
-      font-size:
-        13px;
-
-      line-height:
-        1.4;
-    }
-
-    .ad-progress {
-      display:
-        none;
-
-      width:
-        100%;
-
-      max-width:
-        360px;
-
-      height:
-        8px;
-
-      margin:
-        15px auto 0;
-
-      border-radius:
-        999px;
-
-      background:
-        rgba(255,255,255,0.08);
-
-      overflow:
-        hidden;
-    }
-
-    .ad-progress-bar {
-      width:
-        0%;
-
-      height:
-        100%;
-
-      border-radius:
-        inherit;
-
-      background:
-        linear-gradient(
-          90deg,
-          #3478f6,
-          #76adff
-        );
-
-      transition:
-        width 1s linear;
-    }
-
-
-    /* =====================================================
-       PROFIL
-    ===================================================== */
 
     .profile {
-      max-width:
-        700px;
-
-      margin:
-        auto;
-
-      padding:
-        28px;
-
-      border-radius:
-        22px;
-
-      background:
-        rgba(255,255,255,0.05);
-
-      border:
-        1px solid
-        rgba(255,255,255,0.09);
+      max-width: 700px;
+      margin: auto;
+      padding: 28px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.09);
     }
 
     .profile-top {
-      display:
-        flex;
-
-      align-items:
-        center;
-
-      gap:
-        16px;
-
-      margin-bottom:
-        25px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 25px;
     }
 
     .avatar {
-      width:
-        64px;
-
-      height:
-        64px;
-
-      display:
-        grid;
-
-      place-items:
-        center;
-
-      border-radius:
-        20px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #3478f6,
-          #75aaff
-        );
-
-      font-size:
-        28px;
-
-      font-weight:
-        900;
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #3478f6, #75aaff);
+      font-size: 28px;
+      font-weight: 900;
     }
 
     .profile-name {
-      font-size:
-        21px;
-
-      font-weight:
-        900;
+      font-size: 21px;
+      font-weight: 900;
     }
 
     .profile-level {
-      margin-top:
-        5px;
-
-      color:
-        #8491aa;
-
-      font-size:
-        13px;
+      margin-top: 5px;
+      color: #8491aa;
+      font-size: 13px;
     }
 
     .progress {
-      height:
-        10px;
-
-      border-radius:
-        999px;
-
-      background:
-        rgba(255,255,255,0.08);
-
-      overflow:
-        hidden;
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      overflow: hidden;
     }
 
     .progress-bar {
-      width:
-        0%;
-
-      height:
-        100%;
-
-      border-radius:
-        inherit;
-
-      background:
-        linear-gradient(
-          90deg,
-          #3478f6,
-          #76adff
-        );
-
-      transition:
-        width 0.4s;
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #3478f6, #76adff);
+      transition: width 0.4s;
     }
 
     .progress-info {
-      display:
-        flex;
-
-      justify-content:
-        space-between;
-
-      margin-top:
-        8px;
-
-      color:
-        #7f8ba4;
-
-      font-size:
-        12px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+      color: #7f8ba4;
+      font-size: 12px;
     }
 
-
-    /* =====================================================
-       CONTACT
-    ===================================================== */
-
     .contact {
-      text-align:
-        center;
-
-      padding:
-        40px 20px;
-
-      border-radius:
-        25px;
-
-      background:
-        linear-gradient(
-          145deg,
-          rgba(52,120,246,0.13),
-          rgba(255,255,255,0.035)
-        );
-
-      border:
-        1px solid
-        rgba(100,165,255,0.18);
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 25px;
+      background: linear-gradient(
+        145deg,
+        rgba(52,120,246,0.13),
+        rgba(255,255,255,0.035)
+      );
+      border: 1px solid rgba(100,165,255,0.18);
     }
 
     .contact h2 {
-      font-size:
-        30px;
-
-      margin-bottom:
-        10px;
+      font-size: 30px;
+      margin-bottom: 10px;
     }
 
     .contact p {
-      max-width:
-        550px;
-
-      margin:
-        auto auto 22px;
-
-      color:
-        #99a4ba;
-
-      line-height:
-        1.55;
+      max-width: 550px;
+      margin: auto auto 22px;
+      color: #99a4ba;
+      line-height: 1.55;
     }
-
-
-    /* =====================================================
-       FOOTER
-    ===================================================== */
 
     footer {
-      padding:
-        35px 20px;
-
-      text-align:
-        center;
-
-      border-top:
-        1px solid
-        rgba(255,255,255,0.06);
-
-      color:
-        #69748a;
-
-      font-size:
-        12px;
+      padding: 35px 20px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      color: #69748a;
+      font-size: 12px;
     }
 
-
-    /* =====================================================
-       NOTIFICATION
-    ===================================================== */
-
     .notification {
-      position:
-        fixed;
-
-      left:
-        50%;
-
-      bottom:
-        25px;
-
-      transform:
-        translate(-50%, 100px);
-
-      padding:
-        13px 18px;
-
-      border-radius:
-        12px;
-
-      background:
-        rgba(15,22,38,0.96);
-
-      border:
-        1px solid
-        rgba(105,165,255,0.3);
-
-      box-shadow:
-        0 15px 40px
-        rgba(0,0,0,0.35);
-
-      color:
-        white;
-
-      font-size:
-        14px;
-
-      z-index:
-        999;
-
-      opacity:
-        0;
-
-      transition:
-        0.3s;
+      position: fixed;
+      left: 50%;
+      bottom: 25px;
+      transform: translate(-50%, 100px);
+      padding: 13px 18px;
+      border-radius: 12px;
+      background: rgba(15,22,38,0.96);
+      border: 1px solid rgba(105,165,255,0.3);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+      color: white;
+      font-size: 14px;
+      z-index: 999;
+      opacity: 0;
+      transition: 0.3s;
     }
 
     .notification.show {
-      opacity:
-        1;
-
-      transform:
-        translate(-50%, 0);
+      opacity: 1;
+      transform: translate(-50%, 0);
     }
-
-
-    /* =====================================================
-       MOBILE
-    ===================================================== */
 
     @media (max-width: 720px) {
 
       .navbar {
-        flex-direction:
-          column;
-
-        padding:
-          11px 12px;
+        flex-direction: column;
+        padding: 11px 12px;
       }
 
       .menu {
-        width:
-          100%;
-
-        justify-content:
-          center;
+        width: 100%;
+        justify-content: center;
       }
 
       .menu a {
-        font-size:
-          12px;
-
-        padding:
-          8px;
+        font-size: 12px;
+        padding: 8px;
       }
 
       .hero {
-        min-height:
-          calc(100vh - 100px);
-
-        padding-top:
-          30px;
+        min-height: calc(100vh - 100px);
+        padding-top: 30px;
       }
 
       .hero h1 {
-        letter-spacing:
-          -3px;
+        letter-spacing: -3px;
       }
 
       .hero p {
-        font-size:
-          15px;
+        font-size: 15px;
       }
 
       .stats {
-        gap:
-          8px;
-
-        margin-top:
-          35px;
+        gap: 8px;
+        margin-top: 35px;
       }
 
       .stat {
-        padding:
-          16px 5px;
+        padding: 16px 5px;
       }
 
       .stat-number {
-        font-size:
-          21px;
+        font-size: 21px;
       }
 
       .cards {
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
       }
 
       section {
-        padding:
-          60px 0;
+        padding: 60px 0;
       }
 
       .profile {
-        padding:
-          22px;
+        padding: 22px;
       }
-
-      .reward-ad {
-        padding:
-          18px;
-      }
-
     }
-
 
     @media (max-width: 400px) {
 
       .menu a {
-        font-size:
-          11px;
-
-        margin:
-          0;
+        font-size: 11px;
+        margin: 0;
       }
 
       .logo {
-        font-size:
-          19px;
+        font-size: 19px;
       }
 
       .tap-button {
-        width:
-          130px;
-
-        height:
-          130px;
-
-        font-size:
-          42px;
+        width: 130px;
+        height: 130px;
+        font-size: 42px;
       }
-
     }
 
   </style>
 </head>
 
-
 <body>
 
-
-  <!-- PARTICULES -->
-
-  <div
-    class="particles"
-    id="particles">
-  </div>
-
-
-  <!-- HEADER -->
+  <div class="particles" id="particles"></div>
 
   <header>
 
     <nav class="navbar">
 
-      <a
-        href="#accueil"
-        class="logo">
+      <a href="#accueil" class="logo">
 
         <span class="logo-icon">
           G
@@ -1397,7 +659,6 @@
         GoGo
 
       </a>
-
 
       <div class="menu">
 
@@ -1423,17 +684,9 @@
 
   </header>
 
-
-  <!-- CONTENU -->
-
   <main>
 
-
-    <!-- HERO -->
-
-    <section
-      id="accueil"
-      class="hero">
+    <section id="accueil" class="hero">
 
       <div class="status">
 
@@ -1443,61 +696,39 @@
 
       </div>
 
-
       <h1>
         GoGo
       </h1>
-
 
       <h2>
         Ton nouvel espace Web 🚀
       </h2>
 
-
       <p>
-
         Bienvenue sur GoGo.
         Découvre les fonctionnalités,
         joue, gagne des points et
         fais évoluer ton profil.
-
       </p>
-
 
       <div class="hero-buttons">
 
-        <a
-          href="#jeu"
-          class="btn btn-primary">
-
+        <a href="#jeu" class="btn btn-primary">
           🎮 Jouer maintenant
-
         </a>
 
-
-        <a
-          href="#fonctionnalites"
-          class="btn btn-secondary">
-
+        <a href="#fonctionnalites" class="btn btn-secondary">
           ✨ Découvrir
-
         </a>
 
       </div>
-
-
-      <!-- STATS -->
 
       <div class="stats">
 
         <div class="stat">
 
-          <span
-            class="stat-number"
-            id="pointsStat">
-
+          <span class="stat-number" id="pointsStat">
             0
-
           </span>
 
           <span class="stat-label">
@@ -1506,15 +737,10 @@
 
         </div>
 
-
         <div class="stat">
 
-          <span
-            class="stat-number"
-            id="levelStat">
-
+          <span class="stat-number" id="levelStat">
             1
-
           </span>
 
           <span class="stat-label">
@@ -1523,14 +749,10 @@
 
         </div>
 
-
         <div class="stat">
 
-          <span
-            class="stat-number">
-
+          <span class="stat-number">
             ∞
-
           </span>
 
           <span class="stat-label">
@@ -1543,11 +765,7 @@
 
     </section>
 
-
-    <!-- FONCTIONNALITÉS -->
-
-    <section
-      id="fonctionnalites">
+    <section id="fonctionnalites">
 
       <div class="section-heading">
 
@@ -1566,9 +784,7 @@
 
       </div>
 
-
       <div class="cards">
-
 
         <div class="card">
 
@@ -1589,7 +805,6 @@
 
         </div>
 
-
         <div class="card">
 
           <div class="card-icon">
@@ -1607,7 +822,6 @@
           </p>
 
         </div>
-
 
         <div class="card">
 
@@ -1627,16 +841,11 @@
 
         </div>
 
-
       </div>
 
     </section>
 
-
-    <!-- JEU -->
-
-    <section
-      id="jeu">
+    <section id="jeu">
 
       <div class="section-heading">
 
@@ -1655,24 +864,15 @@
 
       </div>
 
-
       <div class="game-box">
 
-        <div
-          class="game-score"
-          id="gameScore">
-
+        <div class="game-score" id="gameScore">
           0
-
         </div>
-
 
         <div class="game-text">
-
           points cette partie
-
         </div>
-
 
         <button
           class="tap-button"
@@ -1682,18 +882,11 @@
 
         </button>
 
-
-        <div
-          class="game-timer"
-          id="gameTimer">
-
+        <div class="game-timer" id="gameTimer">
           Partie prête
-
         </div>
 
-
-        <div
-          style="margin-top:20px">
+        <div style="margin-top:20px">
 
           <button
             class="btn btn-secondary"
@@ -1705,68 +898,11 @@
 
         </div>
 
-
-        <!-- =================================================
-             PUBLICITÉ RÉCOMPENSÉE
-        ================================================== -->
-
-        <div class="reward-ad">
-
-          <div class="reward-ad-icon">
-            🎬
-          </div>
-
-          <h3>
-            Publicité récompensée
-          </h3>
-
-          <p>
-            Regarde une publicité complète
-            et reçois <strong>+10 GoGo Points</strong>.
-          </p>
-
-
-          <button
-            class="btn btn-primary reward-ad-btn"
-            id="rewardAdBtn"
-            onclick="watchRewardedAd()">
-
-            🎬 Regarder une pub → +10 points
-
-          </button>
-
-
-          <div
-            class="ad-progress"
-            id="adProgress">
-
-            <div
-              class="ad-progress-bar"
-              id="adProgressBar">
-            </div>
-
-          </div>
-
-
-          <div
-            class="ad-status"
-            id="adStatus">
-
-            Appuie sur le bouton pour commencer.
-
-          </div>
-
-        </div>
-
       </div>
 
     </section>
 
-
-    <!-- PROFIL -->
-
-    <section
-      id="profil">
+    <section id="profil">
 
       <div class="section-heading">
 
@@ -1780,7 +916,6 @@
 
       </div>
 
-
       <div class="profile">
 
         <div class="profile-top">
@@ -1789,25 +924,19 @@
             G
           </div>
 
-
           <div>
 
             <div class="profile-name">
               Joueur GoGo
             </div>
 
-            <div
-              class="profile-level"
-              id="profileLevel">
-
+            <div class="profile-level" id="profileLevel">
               Niveau 1
-
             </div>
 
           </div>
 
         </div>
-
 
         <div class="progress">
 
@@ -1817,7 +946,6 @@
           </div>
 
         </div>
-
 
         <div class="progress-info">
 
@@ -1835,11 +963,7 @@
 
     </section>
 
-
-    <!-- CONTACT -->
-
-    <section
-      id="contact">
+    <section id="contact">
 
       <div class="contact">
 
@@ -1854,7 +978,6 @@
           fonctionnalités.
         </p>
 
-
         <button
           class="btn btn-primary"
           onclick="showNotification('Bienvenue sur GoGo ! 🚀')">
@@ -1867,11 +990,7 @@
 
     </section>
 
-
   </main>
-
-
-  <!-- FOOTER -->
 
   <footer>
 
@@ -1880,19 +999,9 @@
 
   </footer>
 
-
-  <!-- NOTIFICATION -->
-
-  <div
-    class="notification"
-    id="notification">
-
+  <div class="notification" id="notification">
     Message
-
   </div>
-
-
-  <!-- JAVASCRIPT -->
 
   <script>
 
@@ -1923,7 +1032,6 @@
       particles.appendChild(
         particle
       );
-
     }
 
 
@@ -1974,30 +1082,25 @@
       const currentXP =
         totalPoints % 100;
 
-
       document
         .getElementById("pointsStat")
         .textContent =
         totalPoints;
-
 
       document
         .getElementById("levelStat")
         .textContent =
         level;
 
-
       document
         .getElementById("profileLevel")
         .textContent =
         "Niveau " + level;
 
-
       document
         .getElementById("progressText")
         .textContent =
         currentXP + " / 100 XP";
-
 
       document
         .getElementById("progressBar")
@@ -2015,12 +1118,10 @@
 
       totalPoints += amount;
 
-
       localStorage.setItem(
         "gogo_points",
         totalPoints
       );
-
 
       updateProfile();
 
@@ -2064,23 +1165,19 @@
         return;
       }
 
-
       gameRunning = true;
 
       gameScore = 0;
 
       gameTime = 10;
 
-
       gameScoreElement
         .textContent =
         "0";
 
-
       gameTimer
         .textContent =
         "⏱️ 10 secondes";
-
 
       timer =
         setInterval(
@@ -2088,13 +1185,11 @@
 
             gameTime--;
 
-
             gameTimer
               .textContent =
               "⏱️ " +
               gameTime +
               " secondes";
-
 
             if (gameTime <= 0) {
 
@@ -2103,18 +1198,15 @@
               gameRunning =
                 false;
 
-
               addPoints(
                 gameScore
               );
-
 
               gameTimer
                 .textContent =
                 "🎉 Partie terminée : +" +
                 gameScore +
                 " points";
-
 
               showNotification(
                 "+" +
@@ -2141,11 +1233,9 @@
 
         }
 
-
         if (gameRunning) {
 
           gameScore++;
-
 
           gameScoreElement
             .textContent =
@@ -2191,183 +1281,6 @@
 
 
     /* =====================================================
-       PUBLICITÉ RÉCOMPENSÉE
-       +10 POINTS
-    ===================================================== */
-
-    const REWARDED_AD_POINTS = 10;
-
-    let rewardedAdRunning = false;
-
-    let rewardedAdTimer = null;
-
-
-    function watchRewardedAd() {
-
-      if (rewardedAdRunning) {
-        return;
-      }
-
-
-      const button =
-        document.getElementById(
-          "rewardAdBtn"
-        );
-
-
-      const status =
-        document.getElementById(
-          "adStatus"
-        );
-
-
-      const progress =
-        document.getElementById(
-          "adProgress"
-        );
-
-
-      const progressBar =
-        document.getElementById(
-          "adProgressBar"
-        );
-
-
-      rewardedAdRunning =
-        true;
-
-
-      button.disabled =
-        true;
-
-
-      progress.style.display =
-        "block";
-
-
-      let seconds = 10;
-
-
-      progressBar.style.width =
-        "0%";
-
-
-      status.textContent =
-        "🎬 Publicité en cours... 10 secondes";
-
-
-      rewardedAdTimer =
-        setInterval(
-          function () {
-
-            seconds--;
-
-
-            const percentage =
-              ((10 - seconds) / 10) * 100;
-
-
-            progressBar.style.width =
-              percentage + "%";
-
-
-            if (seconds > 0) {
-
-              status.textContent =
-                "🎬 Publicité en cours... " +
-                seconds +
-                " secondes";
-
-            } else {
-
-              clearInterval(
-                rewardedAdTimer
-              );
-
-              rewardedAdTimer =
-                null;
-
-
-              progressBar.style.width =
-                "100%";
-
-
-              giveRewardedAdReward();
-
-            }
-
-          },
-          1000
-        );
-
-    }
-
-
-    /* =====================================================
-       RÉCOMPENSE DE LA PUB
-    ===================================================== */
-
-    function giveRewardedAdReward() {
-
-      const button =
-        document.getElementById(
-          "rewardAdBtn"
-        );
-
-
-      const status =
-        document.getElementById(
-          "adStatus"
-        );
-
-
-      /*
-       * On utilise addPoints()
-       * afin que le profil, le niveau
-       * et localStorage soient
-       * automatiquement mis à jour.
-       */
-
-      addPoints(
-        REWARDED_AD_POINTS
-      );
-
-
-      status.textContent =
-        "✅ Publicité terminée ! " +
-        "+10 GoGo Points ajoutés.";
-
-
-      showNotification(
-        "🎉 Pub terminée ! +10 GoGo Points"
-      );
-
-
-      /*
-       * Petite pause avant de
-       * permettre une nouvelle pub.
-       */
-
-      setTimeout(
-        function () {
-
-          rewardedAdRunning =
-            false;
-
-          button.disabled =
-            false;
-
-          status.textContent =
-            "🎁 Tu peux regarder une nouvelle publicité.";
-
-        },
-        2000
-      );
-
-    }
-
-
-    /* =====================================================
        NOTIFICATIONS
     ===================================================== */
 
@@ -2381,20 +1294,16 @@
           "notification"
         );
 
-
       notification.textContent =
         message;
-
 
       notification.classList.add(
         "show"
       );
 
-
       clearTimeout(
         notificationTimeout
       );
-
 
       notificationTimeout =
         setTimeout(
@@ -2420,4 +1329,4 @@
   </script>
 
 </body>
-  </html>
+</html>
