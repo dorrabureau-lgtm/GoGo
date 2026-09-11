@@ -1,15 +1,7 @@
-
-    body {
-      min-height: 100vh;
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-
-  <!-- Google AdSense -->
-  <script async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7065876283400939"
-    crossorigin="anonymous"></script>
 
   <meta
     name="viewport"
@@ -20,12 +12,25 @@
 
   <meta
     name="description"
-    content="GoGo - Ton espace Web"
+    content="GoGo - Jeux, points, progression et espace Web mobile."
   >
 
   <title>GoGo — Accueil</title>
 
+  <!-- =====================================================
+       GOOGLE ADSENSE
+       ===================================================== -->
+
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7065876283400939"
+    crossorigin="anonymous"></script>
+
+
   <style>
+
+    /* =====================================================
+       RESET
+    ===================================================== */
 
     * {
       box-sizing: border-box;
@@ -40,7 +45,12 @@
 
     body {
       min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       color: #ffffff;
 
       background:
@@ -55,28 +65,45 @@
     }
 
     button,
+    input,
+    textarea,
     a {
       font-family: inherit;
     }
 
+
+    /* =====================================================
+       PARTICULES
+    ===================================================== */
+
     .particles {
       position: fixed;
       inset: 0;
+
       pointer-events: none;
+
       overflow: hidden;
+
       z-index: -1;
     }
 
     .particle {
       position: absolute;
+
       width: 4px;
       height: 4px;
-      background: rgba(120, 180, 255, 0.6);
+
+      background:
+        rgba(120, 180, 255, 0.6);
+
       border-radius: 50%;
-      animation: floatParticle linear infinite;
+
+      animation:
+        floatParticle linear infinite;
     }
 
     @keyframes floatParticle {
+
       from {
         transform: translateY(110vh);
         opacity: 0;
@@ -94,109 +121,220 @@
         transform: translateY(-10vh);
         opacity: 0;
       }
+
     }
+
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
 
     header {
       position: sticky;
+
       top: 0;
+
       z-index: 100;
-      background: rgba(5, 8, 16, 0.82);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+
+      background:
+        rgba(5, 8, 16, 0.82);
+
+      backdrop-filter:
+        blur(18px);
+
+      border-bottom:
+        1px solid
+        rgba(255,255,255,0.08);
     }
 
     .navbar {
       max-width: 1100px;
+
       margin: auto;
+
       min-height: 68px;
-      padding: 10px 18px;
+
+      padding:
+        10px 18px;
+
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
+
       gap: 20px;
     }
 
+
+    /* =====================================================
+       LOGO
+    ===================================================== */
+
     .logo {
       display: flex;
+
       align-items: center;
+
       gap: 9px;
+
       font-size: 22px;
+
       font-weight: 900;
+
       color: #72aaff;
+
       text-decoration: none;
+
       white-space: nowrap;
     }
 
     .logo-icon {
       width: 38px;
       height: 38px;
+
       display: grid;
+
       place-items: center;
+
       border-radius: 12px;
-      background: linear-gradient(135deg, #3478f6, #6f9fff);
-      box-shadow: 0 0 25px rgba(52,120,246,0.35);
+
+      background:
+        linear-gradient(
+          135deg,
+          #3478f6,
+          #6f9fff
+        );
+
+      box-shadow:
+        0 0 25px
+        rgba(52,120,246,0.35);
+
       font-size: 20px;
     }
 
+
+    /* =====================================================
+       MENU
+    ===================================================== */
+
     .menu {
       display: flex;
+
       align-items: center;
+
       gap: 7px;
+
+      overflow-x: auto;
     }
 
     .menu a {
       color: #dce6ff;
+
       text-decoration: none;
+
       font-size: 14px;
-      padding: 9px 11px;
+
+      padding:
+        9px 11px;
+
       border-radius: 9px;
-      transition: 0.2s;
+
+      transition:
+        0.2s;
+
+      white-space: nowrap;
     }
 
     .menu a:hover {
-      background: rgba(255,255,255,0.08);
+      background:
+        rgba(255,255,255,0.08);
+
       color: white;
     }
 
+
+    /* =====================================================
+       CONTENU
+    ===================================================== */
+
     main {
       max-width: 1100px;
+
       margin: auto;
-      padding: 0 18px;
+
+      padding:
+        0 18px;
     }
 
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
     .hero {
-      min-height: calc(100vh - 68px);
+      min-height:
+        calc(100vh - 68px);
+
       display: flex;
+
       flex-direction: column;
+
       align-items: center;
+
       justify-content: center;
+
       text-align: center;
-      padding: 50px 10px;
+
+      padding:
+        50px 10px;
     }
 
     .status {
       display: inline-flex;
+
       align-items: center;
+
       gap: 8px;
-      padding: 8px 14px;
+
+      padding:
+        8px 14px;
+
       border-radius: 999px;
-      background: rgba(58,129,255,0.1);
-      border: 1px solid rgba(95,157,255,0.3);
+
+      background:
+        rgba(58,129,255,0.1);
+
+      border:
+        1px solid
+        rgba(95,157,255,0.3);
+
       color: #a9caff;
+
       font-size: 13px;
+
       margin-bottom: 22px;
-      animation: appear 0.7s ease;
+
+      animation:
+        appear 0.7s ease;
     }
 
     .status-dot {
       width: 8px;
       height: 8px;
+
       border-radius: 50%;
-      background: #55e68a;
-      box-shadow: 0 0 12px #55e68a;
+
+      background:
+        #55e68a;
+
+      box-shadow:
+        0 0 12px
+        #55e68a;
     }
 
     @keyframes appear {
+
       from {
         opacity: 0;
         transform: translateY(15px);
@@ -206,26 +344,45 @@
         opacity: 1;
         transform: translateY(0);
       }
+
     }
 
     .hero h1 {
-      font-size: clamp(52px, 15vw, 105px);
-      line-height: 0.9;
-      font-weight: 1000;
-      letter-spacing: -5px;
-      background: linear-gradient(
-        90deg,
-        #ffffff 10%,
-        #77adff 50%,
-        #b6d3ff 90%
-      );
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      animation: heroTitle 0.8s ease;
+      font-size:
+        clamp(52px, 15vw, 105px);
+
+      line-height:
+        0.9;
+
+      font-weight:
+        1000;
+
+      letter-spacing:
+        -5px;
+
+      background:
+        linear-gradient(
+          90deg,
+          #ffffff 10%,
+          #77adff 50%,
+          #b6d3ff 90%
+        );
+
+      -webkit-background-clip:
+        text;
+
+      background-clip:
+        text;
+
+      color:
+        transparent;
+
+      animation:
+        heroTitle 0.8s ease;
     }
 
     @keyframes heroTitle {
+
       from {
         opacity: 0;
         transform: scale(0.9);
@@ -235,425 +392,986 @@
         opacity: 1;
         transform: scale(1);
       }
+
     }
 
     .hero h2 {
-      margin-top: 16px;
-      font-size: clamp(20px, 5vw, 30px);
-      color: #d8e4ff;
-      font-weight: 700;
+      margin-top:
+        16px;
+
+      font-size:
+        clamp(20px, 5vw, 30px);
+
+      color:
+        #d8e4ff;
+
+      font-weight:
+        700;
     }
 
     .hero p {
-      max-width: 650px;
-      margin-top: 18px;
-      color: #9faac2;
-      font-size: 16px;
-      line-height: 1.65;
+      max-width:
+        650px;
+
+      margin-top:
+        18px;
+
+      color:
+        #9faac2;
+
+      font-size:
+        16px;
+
+      line-height:
+        1.65;
     }
 
+
+    /* =====================================================
+       BOUTONS
+    ===================================================== */
+
     .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 28px;
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      justify-content:
+        center;
+
+      gap:
+        12px;
+
+      margin-top:
+        28px;
     }
 
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      min-height: 48px;
-      padding: 13px 20px;
-      border: none;
-      border-radius: 13px;
-      color: white;
-      font-size: 15px;
-      font-weight: 800;
-      text-decoration: none;
-      cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.15s;
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      gap:
+        8px;
+
+      min-height:
+        48px;
+
+      padding:
+        13px 20px;
+
+      border:
+        none;
+
+      border-radius:
+        13px;
+
+      color:
+        white;
+
+      font-size:
+        15px;
+
+      font-weight:
+        800;
+
+      text-decoration:
+        none;
+
+      cursor:
+        pointer;
+
+      transition:
+        transform 0.15s,
+        box-shadow 0.15s;
     }
 
     .btn:active {
-      transform: scale(0.95);
+      transform:
+        scale(0.95);
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, #3478f6, #5794ff);
-      box-shadow: 0 10px 30px rgba(52,120,246,0.3);
+      background:
+        linear-gradient(
+          135deg,
+          #3478f6,
+          #5794ff
+        );
+
+      box-shadow:
+        0 10px 30px
+        rgba(52,120,246,0.3);
     }
 
     .btn-secondary {
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.12);
+      background:
+        rgba(255,255,255,0.07);
+
+      border:
+        1px solid
+        rgba(255,255,255,0.12);
     }
 
+
+    /* =====================================================
+       STATS
+    ===================================================== */
+
     .stats {
-      width: min(700px, 100%);
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-top: 45px;
+      width:
+        min(700px, 100%);
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap:
+        12px;
+
+      margin-top:
+        45px;
     }
 
     .stat {
-      padding: 20px 10px;
-      border-radius: 17px;
-      background: rgba(255,255,255,0.045);
-      border: 1px solid rgba(255,255,255,0.08);
+      padding:
+        20px 10px;
+
+      border-radius:
+        17px;
+
+      background:
+        rgba(255,255,255,0.045);
+
+      border:
+        1px solid
+        rgba(255,255,255,0.08);
     }
 
     .stat-number {
-      display: block;
-      font-size: 25px;
-      font-weight: 900;
-      color: #76adff;
+      display:
+        block;
+
+      font-size:
+        25px;
+
+      font-weight:
+        900;
+
+      color:
+        #76adff;
     }
 
     .stat-label {
-      display: block;
-      margin-top: 5px;
-      color: #8e99b1;
-      font-size: 12px;
+      display:
+        block;
+
+      margin-top:
+        5px;
+
+      color:
+        #8e99b1;
+
+      font-size:
+        12px;
     }
 
+
+    /* =====================================================
+       SECTIONS
+    ===================================================== */
+
     section {
-      padding: 85px 0;
+      padding:
+        85px 0;
     }
 
     .section-heading {
-      text-align: center;
-      margin-bottom: 35px;
+      text-align:
+        center;
+
+      margin-bottom:
+        35px;
     }
 
     .section-heading small {
-      color: #6da5ff;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 11px;
+      color:
+        #6da5ff;
+
+      font-weight:
+        800;
+
+      text-transform:
+        uppercase;
+
+      letter-spacing:
+        2px;
+
+      font-size:
+        11px;
     }
 
     .section-heading h2 {
-      margin-top: 9px;
-      font-size: clamp(30px, 7vw, 45px);
+      margin-top:
+        9px;
+
+      font-size:
+        clamp(30px, 7vw, 45px);
     }
 
     .section-heading p {
-      max-width: 600px;
-      margin: 12px auto 0;
-      color: #909bb2;
-      line-height: 1.5;
+      max-width:
+        600px;
+
+      margin:
+        12px auto 0;
+
+      color:
+        #909bb2;
+
+      line-height:
+        1.5;
     }
 
+
+    /* =====================================================
+       CARTES
+    ===================================================== */
+
     .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap:
+        16px;
     }
 
     .card {
-      position: relative;
-      padding: 25px;
-      min-height: 200px;
-      border-radius: 20px;
-      background: linear-gradient(
-        145deg,
-        rgba(255,255,255,0.07),
-        rgba(255,255,255,0.025)
-      );
-      border: 1px solid rgba(255,255,255,0.09);
-      overflow: hidden;
-      transition: transform 0.25s, border-color 0.25s;
+      position:
+        relative;
+
+      padding:
+        25px;
+
+      min-height:
+        200px;
+
+      border-radius:
+        20px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,0.07),
+          rgba(255,255,255,0.025)
+        );
+
+      border:
+        1px solid
+        rgba(255,255,255,0.09);
+
+      overflow:
+        hidden;
+
+      transition:
+        transform 0.25s,
+        border-color 0.25s;
     }
 
     .card:hover {
-      transform: translateY(-7px);
-      border-color: rgba(105,165,255,0.35);
+      transform:
+        translateY(-7px);
+
+      border-color:
+        rgba(105,165,255,0.35);
     }
 
     .card::after {
-      content: "";
-      position: absolute;
-      width: 130px;
-      height: 130px;
-      right: -60px;
-      bottom: -70px;
-      border-radius: 50%;
-      background: rgba(80,145,255,0.1);
-      filter: blur(5px);
+      content:
+        "";
+
+      position:
+        absolute;
+
+      width:
+        130px;
+
+      height:
+        130px;
+
+      right:
+        -60px;
+
+      bottom:
+        -70px;
+
+      border-radius:
+        50%;
+
+      background:
+        rgba(80,145,255,0.1);
+
+      filter:
+        blur(5px);
     }
 
     .card-icon {
-      width: 55px;
-      height: 55px;
-      display: grid;
-      place-items: center;
-      border-radius: 16px;
-      background: rgba(62,126,240,0.13);
-      font-size: 27px;
-      margin-bottom: 18px;
+      width:
+        55px;
+
+      height:
+        55px;
+
+      display:
+        grid;
+
+      place-items:
+        center;
+
+      border-radius:
+        16px;
+
+      background:
+        rgba(62,126,240,0.13);
+
+      font-size:
+        27px;
+
+      margin-bottom:
+        18px;
     }
 
     .card h3 {
-      font-size: 19px;
-      margin-bottom: 9px;
+      font-size:
+        19px;
+
+      margin-bottom:
+        9px;
     }
 
     .card p {
-      color: #9ca7bc;
-      line-height: 1.55;
-      font-size: 14px;
+      color:
+        #9ca7bc;
+
+      line-height:
+        1.55;
+
+      font-size:
+        14px;
     }
 
+
+    /* =====================================================
+       JEU
+    ===================================================== */
+
     .game-box {
-      max-width: 700px;
-      margin: auto;
-      padding: 25px;
-      text-align: center;
-      border-radius: 24px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
+      max-width:
+        700px;
+
+      margin:
+        auto;
+
+      padding:
+        25px;
+
+      text-align:
+        center;
+
+      border-radius:
+        24px;
+
+      background:
+        rgba(255,255,255,0.05);
+
+      border:
+        1px solid
+        rgba(255,255,255,0.1);
     }
 
     .game-score {
-      font-size: 35px;
-      font-weight: 900;
-      color: #72aaff;
+      font-size:
+        35px;
+
+      font-weight:
+        900;
+
+      color:
+        #72aaff;
     }
 
     .game-text {
-      margin: 8px 0 20px;
-      color: #a0abc1;
+      margin:
+        8px 0 20px;
+
+      color:
+        #a0abc1;
     }
 
     .tap-button {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 0;
-      background: linear-gradient(145deg, #3478f6, #6ca5ff);
-      color: white;
-      font-size: 50px;
-      cursor: pointer;
-      box-shadow: 0 15px 50px rgba(52,120,246,0.3);
-      transition: transform 0.08s;
+      width:
+        150px;
+
+      height:
+        150px;
+
+      border-radius:
+        50%;
+
+      border:
+        0;
+
+      background:
+        linear-gradient(
+          145deg,
+          #3478f6,
+          #6ca5ff
+        );
+
+      color:
+        white;
+
+      font-size:
+        50px;
+
+      cursor:
+        pointer;
+
+      box-shadow:
+        0 15px 50px
+        rgba(52,120,246,0.3);
+
+      transition:
+        transform 0.08s;
     }
 
     .tap-button:active {
-      transform: scale(0.9);
+      transform:
+        scale(0.9);
     }
 
     .game-timer {
-      margin-top: 18px;
-      color: #8f9ab1;
-      font-size: 13px;
+      margin-top:
+        18px;
+
+      color:
+        #8f9ab1;
+
+      font-size:
+        13px;
     }
 
+
+    /* =====================================================
+       PROFIL
+    ===================================================== */
+
     .profile {
-      max-width: 700px;
-      margin: auto;
-      padding: 28px;
-      border-radius: 22px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.09);
+      max-width:
+        700px;
+
+      margin:
+        auto;
+
+      padding:
+        28px;
+
+      border-radius:
+        22px;
+
+      background:
+        rgba(255,255,255,0.05);
+
+      border:
+        1px solid
+        rgba(255,255,255,0.09);
     }
 
     .profile-top {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 25px;
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        16px;
+
+      margin-bottom:
+        25px;
     }
 
     .avatar {
-      width: 64px;
-      height: 64px;
-      display: grid;
-      place-items: center;
-      border-radius: 20px;
-      background: linear-gradient(135deg, #3478f6, #75aaff);
-      font-size: 28px;
-      font-weight: 900;
+      width:
+        64px;
+
+      height:
+        64px;
+
+      display:
+        grid;
+
+      place-items:
+        center;
+
+      border-radius:
+        20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #3478f6,
+          #75aaff
+        );
+
+      font-size:
+        28px;
+
+      font-weight:
+        900;
     }
 
     .profile-name {
-      font-size: 21px;
-      font-weight: 900;
+      font-size:
+        21px;
+
+      font-weight:
+        900;
     }
 
     .profile-level {
-      margin-top: 5px;
-      color: #8491aa;
-      font-size: 13px;
+      margin-top:
+        5px;
+
+      color:
+        #8491aa;
+
+      font-size:
+        13px;
     }
 
     .progress {
-      height: 10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.08);
-      overflow: hidden;
+      height:
+        10px;
+
+      border-radius:
+        999px;
+
+      background:
+        rgba(255,255,255,0.08);
+
+      overflow:
+        hidden;
     }
 
     .progress-bar {
-      width: 0%;
-      height: 100%;
-      border-radius: inherit;
-      background: linear-gradient(90deg, #3478f6, #76adff);
-      transition: width 0.4s;
+      width:
+        0%;
+
+      height:
+        100%;
+
+      border-radius:
+        inherit;
+
+      background:
+        linear-gradient(
+          90deg,
+          #3478f6,
+          #76adff
+        );
+
+      transition:
+        width 0.4s;
     }
 
     .progress-info {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 8px;
-      color: #7f8ba4;
-      font-size: 12px;
+      display:
+        flex;
+
+      justify-content:
+        space-between;
+
+      margin-top:
+        8px;
+
+      color:
+        #7f8ba4;
+
+      font-size:
+        12px;
     }
 
-    .contact {
-      text-align: center;
-      padding: 40px 20px;
-      border-radius: 25px;
-      background: linear-gradient(
-        145deg,
-        rgba(52,120,246,0.13),
-        rgba(255,255,255,0.035)
-      );
-      border: 1px solid rgba(100,165,255,0.18);
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+
+    .contact-box {
+      max-width:
+        700px;
+
+      margin:
+        auto;
+
+      padding:
+        28px;
+
+      border-radius:
+        24px;
+
+      background:
+        rgba(255,255,255,0.05);
+
+      border:
+        1px solid
+        rgba(255,255,255,0.1);
+
+      box-shadow:
+        0 20px 60px
+        rgba(0,0,0,0.18);
     }
 
-    .contact h2 {
-      font-size: 30px;
-      margin-bottom: 10px;
+    .contact-box label {
+      display:
+        block;
+
+      margin:
+        16px 0 8px;
+
+      color:
+        #dce6ff;
+
+      font-size:
+        14px;
+
+      font-weight:
+        700;
     }
 
-    .contact p {
-      max-width: 550px;
-      margin: auto auto 22px;
-      color: #99a4ba;
-      line-height: 1.55;
+    .contact-box input,
+    .contact-box textarea {
+      width:
+        100%;
+
+      padding:
+        14px;
+
+      border-radius:
+        13px;
+
+      border:
+        1px solid
+        rgba(255,255,255,0.12);
+
+      background:
+        rgba(0,0,0,0.25);
+
+      color:
+        white;
+
+      outline:
+        none;
+
+      font-size:
+        15px;
     }
+
+    .contact-box input:focus,
+    .contact-box textarea:focus {
+      border-color:
+        #5794ff;
+
+      box-shadow:
+        0 0 0 3px
+        rgba(52,120,246,0.12);
+    }
+
+    .contact-box textarea {
+      min-height:
+        150px;
+
+      resize:
+        vertical;
+    }
+
+    .contact-box input::placeholder,
+    .contact-box textarea::placeholder {
+      color:
+        #6f7b92;
+    }
+
+    .contact-send {
+      width:
+        100%;
+
+      margin-top:
+        22px;
+    }
+
+    .contact-info {
+      margin-top:
+        18px;
+
+      padding:
+        14px;
+
+      border-radius:
+        13px;
+
+      background:
+        rgba(52,120,246,0.08);
+
+      border:
+        1px solid
+        rgba(100,165,255,0.14);
+
+      color:
+        #96a4bd;
+
+      font-size:
+        12px;
+
+      line-height:
+        1.5;
+
+      text-align:
+        center;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
 
     footer {
-      padding: 35px 20px;
-      text-align: center;
-      border-top: 1px solid rgba(255,255,255,0.06);
-      color: #69748a;
-      font-size: 12px;
+      padding:
+        35px 20px;
+
+      text-align:
+        center;
+
+      border-top:
+        1px solid
+        rgba(255,255,255,0.06);
+
+      color:
+        #69748a;
+
+      font-size:
+        12px;
     }
 
+
+    /* =====================================================
+       NOTIFICATION
+    ===================================================== */
+
     .notification {
-      position: fixed;
-      left: 50%;
-      bottom: 25px;
-      transform: translate(-50%, 100px);
-      padding: 13px 18px;
-      border-radius: 12px;
-      background: rgba(15,22,38,0.96);
-      border: 1px solid rgba(105,165,255,0.3);
-      box-shadow: 0 15px 40px rgba(0,0,0,0.35);
-      color: white;
-      font-size: 14px;
-      z-index: 999;
-      opacity: 0;
-      transition: 0.3s;
+      position:
+        fixed;
+
+      left:
+        50%;
+
+      bottom:
+        25px;
+
+      transform:
+        translate(-50%, 100px);
+
+      padding:
+        13px 18px;
+
+      border-radius:
+        12px;
+
+      background:
+        rgba(15,22,38,0.96);
+
+      border:
+        1px solid
+        rgba(105,165,255,0.3);
+
+      box-shadow:
+        0 15px 40px
+        rgba(0,0,0,0.35);
+
+      color:
+        white;
+
+      font-size:
+        14px;
+
+      z-index:
+        999;
+
+      opacity:
+        0;
+
+      transition:
+        0.3s;
     }
 
     .notification.show {
-      opacity: 1;
-      transform: translate(-50%, 0);
+      opacity:
+        1;
+
+      transform:
+        translate(-50%, 0);
     }
+
+
+    /* =====================================================
+       MOBILE
+    ===================================================== */
 
     @media (max-width: 720px) {
 
       .navbar {
-        flex-direction: column;
-        padding: 11px 12px;
+        flex-direction:
+          column;
+
+        padding:
+          11px 12px;
       }
 
       .menu {
-        width: 100%;
-        justify-content: center;
+        width:
+          100%;
+
+        justify-content:
+          flex-start;
       }
 
       .menu a {
-        font-size: 12px;
-        padding: 8px;
+        font-size:
+          12px;
+
+        padding:
+          8px;
       }
 
       .hero {
-        min-height: calc(100vh - 100px);
-        padding-top: 30px;
+        min-height:
+          calc(100vh - 100px);
+
+        padding-top:
+          30px;
       }
 
       .hero h1 {
-        letter-spacing: -3px;
+        letter-spacing:
+          -3px;
       }
 
       .hero p {
-        font-size: 15px;
+        font-size:
+          15px;
       }
 
       .stats {
-        gap: 8px;
-        margin-top: 35px;
+        gap:
+          8px;
+
+        margin-top:
+          35px;
       }
 
       .stat {
-        padding: 16px 5px;
+        padding:
+          16px 5px;
       }
 
       .stat-number {
-        font-size: 21px;
+        font-size:
+          21px;
       }
 
       .cards {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+          1fr;
       }
 
       section {
-        padding: 60px 0;
+        padding:
+          60px 0;
       }
 
-      .profile {
-        padding: 22px;
+      .profile,
+      .contact-box {
+        padding:
+          22px;
       }
+
     }
+
 
     @media (max-width: 400px) {
 
       .menu a {
-        font-size: 11px;
-        margin: 0;
+        font-size:
+          11px;
       }
 
       .logo {
-        font-size: 19px;
+        font-size:
+          19px;
       }
 
       .tap-button {
-        width: 130px;
-        height: 130px;
-        font-size: 42px;
+        width:
+          130px;
+
+        height:
+          130px;
+
+        font-size:
+          42px;
       }
+
     }
 
   </style>
 </head>
 
+
 <body>
 
-  <div class="particles" id="particles"></div>
+
+  <!-- =====================================================
+       PARTICULES
+       ===================================================== -->
+
+  <div
+    class="particles"
+    id="particles">
+  </div>
+
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
 
   <header>
 
     <nav class="navbar">
 
-      <a href="#accueil" class="logo">
+      <a
+        href="#accueil"
+        class="logo">
 
         <span class="logo-icon">
           G
@@ -662,6 +1380,7 @@
         GoGo
 
       </a>
+
 
       <div class="menu">
 
@@ -681,15 +1400,31 @@
           Profil
         </a>
 
+        <a href="#contact">
+          Contact
+        </a>
+
       </div>
 
     </nav>
 
   </header>
 
+
+  <!-- =====================================================
+       CONTENU
+       ===================================================== -->
+
   <main>
 
-    <section id="accueil" class="hero">
+
+    <!-- ===================================================
+         ACCUEIL
+         =================================================== -->
+
+    <section
+      id="accueil"
+      class="hero">
 
       <div class="status">
 
@@ -699,13 +1434,16 @@
 
       </div>
 
+
       <h1>
         GoGo
       </h1>
 
+
       <h2>
         Ton nouvel espace Web 🚀
       </h2>
+
 
       <p>
         Bienvenue sur GoGo.
@@ -714,24 +1452,50 @@
         fais évoluer ton profil.
       </p>
 
+
       <div class="hero-buttons">
 
-        <a href="#jeu" class="btn btn-primary">
+        <a
+          href="#jeu"
+          class="btn btn-primary">
+
           🎮 Jouer maintenant
+
         </a>
 
-        <a href="#fonctionnalites" class="btn btn-secondary">
+
+        <a
+          href="#fonctionnalites"
+          class="btn btn-secondary">
+
           ✨ Découvrir
+
+        </a>
+
+
+        <a
+          href="#contact"
+          class="btn btn-secondary">
+
+          📩 Contact
+
         </a>
 
       </div>
+
+
+      <!-- STATS -->
 
       <div class="stats">
 
         <div class="stat">
 
-          <span class="stat-number" id="pointsStat">
+          <span
+            class="stat-number"
+            id="pointsStat">
+
             0
+
           </span>
 
           <span class="stat-label">
@@ -740,10 +1504,15 @@
 
         </div>
 
+
         <div class="stat">
 
-          <span class="stat-number" id="levelStat">
+          <span
+            class="stat-number"
+            id="levelStat">
+
             1
+
           </span>
 
           <span class="stat-label">
@@ -751,6 +1520,7 @@
           </span>
 
         </div>
+
 
         <div class="stat">
 
@@ -768,7 +1538,13 @@
 
     </section>
 
-    <section id="fonctionnalites">
+
+    <!-- ===================================================
+         FONCTIONNALITÉS
+         =================================================== -->
+
+    <section
+      id="fonctionnalites">
 
       <div class="section-heading">
 
@@ -781,13 +1557,16 @@
         </h2>
 
         <p>
-          Une base prête à accueillir
-          tes prochaines idées.
+          Une plateforme pensée pour
+          jouer, progresser et découvrir
+          de nouvelles fonctionnalités.
         </p>
 
       </div>
 
+
       <div class="cards">
+
 
         <div class="card">
 
@@ -800,13 +1579,13 @@
           </h3>
 
           <p>
-            Ajoute tes propres jeux
-            directement dans ton site
-            et fais gagner des points
-            aux joueurs.
+            Joue à des mini-jeux directement
+            depuis GoGo et gagne des points
+            grâce à tes performances.
           </p>
 
         </div>
+
 
         <div class="card">
 
@@ -819,12 +1598,13 @@
           </h3>
 
           <p>
-            Les points sont sauvegardés
-            automatiquement sur l'appareil
-            grâce au stockage du navigateur.
+            Tes points sont sauvegardés
+            sur ton appareil et permettent
+            de faire progresser ton niveau.
           </p>
 
         </div>
+
 
         <div class="card">
 
@@ -837,18 +1617,25 @@
           </h3>
 
           <p>
-            L'interface est conçue pour
-            fonctionner confortablement
-            sur un téléphone.
+            GoGo est conçu pour être
+            simple et agréable à utiliser
+            sur téléphone.
           </p>
 
         </div>
+
 
       </div>
 
     </section>
 
-    <section id="jeu">
+
+    <!-- ===================================================
+         JEU
+         =================================================== -->
+
+    <section
+      id="jeu">
 
       <div class="section-heading">
 
@@ -862,20 +1649,28 @@
 
         <p>
           Appuie sur le bouton le plus
-          rapidement possible.
+          rapidement possible pendant
+          10 secondes.
         </p>
 
       </div>
 
+
       <div class="game-box">
 
-        <div class="game-score" id="gameScore">
+        <div
+          class="game-score"
+          id="gameScore">
+
           0
+
         </div>
+
 
         <div class="game-text">
           points cette partie
         </div>
+
 
         <button
           class="tap-button"
@@ -885,9 +1680,15 @@
 
         </button>
 
-        <div class="game-timer" id="gameTimer">
+
+        <div
+          class="game-timer"
+          id="gameTimer">
+
           Partie prête
+
         </div>
+
 
         <div style="margin-top:20px">
 
@@ -905,7 +1706,13 @@
 
     </section>
 
-    <section id="profil">
+
+    <!-- ===================================================
+         PROFIL
+         =================================================== -->
+
+    <section
+      id="profil">
 
       <div class="section-heading">
 
@@ -917,7 +1724,13 @@
           Ton profil
         </h2>
 
+        <p>
+          Consulte tes points et ton
+          niveau directement sur ton appareil.
+        </p>
+
       </div>
+
 
       <div class="profile">
 
@@ -927,19 +1740,25 @@
             G
           </div>
 
+
           <div>
 
             <div class="profile-name">
               Joueur GoGo
             </div>
 
-            <div class="profile-level" id="profileLevel">
+            <div
+              class="profile-level"
+              id="profileLevel">
+
               Niveau 1
+
             </div>
 
           </div>
 
         </div>
+
 
         <div class="progress">
 
@@ -949,6 +1768,7 @@
           </div>
 
         </div>
+
 
         <div class="progress-info">
 
@@ -966,34 +1786,118 @@
 
     </section>
 
-    <section id="contact">
 
-      <div class="contact">
+    <!-- ===================================================
+         CONTACT
+         =================================================== -->
+
+    <section
+      id="contact">
+
+      <div class="section-heading">
+
+        <small>
+          Assistance
+        </small>
 
         <h2>
-          🚀 Continue à construire
+          Contact GoGo
         </h2>
 
         <p>
-          Ton site est maintenant une base
-          que tu peux personnaliser avec
-          tes jeux, tes pages et tes propres
-          fonctionnalités.
+          Une question, une suggestion ou
+          un problème ? Envoie-nous un message.
         </p>
 
-        <button
-          class="btn btn-primary"
-          onclick="showNotification('Bienvenue sur GoGo ! 🚀')">
+      </div>
 
-          ✨ Tester GoGo
 
-        </button>
+      <div class="contact-box">
+
+        <form
+          id="contactForm">
+
+
+          <label for="contactName">
+            Votre nom
+          </label>
+
+          <input
+            type="text"
+            id="contactName"
+            placeholder="Votre nom"
+            autocomplete="name"
+            required
+          >
+
+
+          <label for="contactEmail">
+            Votre adresse e-mail
+          </label>
+
+          <input
+            type="email"
+            id="contactEmail"
+            placeholder="exemple@email.com"
+            autocomplete="email"
+            required
+          >
+
+
+          <label for="contactSubject">
+            Sujet
+          </label>
+
+          <input
+            type="text"
+            id="contactSubject"
+            placeholder="Sujet de votre message"
+            required
+          >
+
+
+          <label for="contactMessage">
+            Message
+          </label>
+
+          <textarea
+            id="contactMessage"
+            placeholder="Écrivez votre message ici..."
+            required
+          ></textarea>
+
+
+          <button
+            type="submit"
+            class="btn btn-primary contact-send">
+
+            📧 Envoyer le message
+
+          </button>
+
+
+        </form>
+
+
+        <div class="contact-info">
+
+          En cliquant sur « Envoyer le message »,
+          votre application e-mail s'ouvrira avec
+          le destinataire et le message déjà préparés.
+
+        </div>
 
       </div>
 
     </section>
 
+
   </main>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
 
   <footer>
 
@@ -1002,45 +1906,75 @@
 
   </footer>
 
-  <div class="notification" id="notification">
+
+  <!-- =====================================================
+       NOTIFICATION
+       ===================================================== -->
+
+  <div
+    class="notification"
+    id="notification">
+
     Message
+
   </div>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
 
   <script>
 
+
     /* =====================================================
        PARTICULES
-    ===================================================== */
+       ===================================================== */
 
     const particles =
-      document.getElementById("particles");
+      document.getElementById(
+        "particles"
+      );
 
-    for (let i = 0; i < 35; i++) {
+
+    for (
+      let i = 0;
+      i < 35;
+      i++
+    ) {
 
       const particle =
-        document.createElement("div");
+        document.createElement(
+          "div"
+        );
+
 
       particle.className =
         "particle";
 
+
       particle.style.left =
         Math.random() * 100 + "%";
+
 
       particle.style.animationDuration =
         (5 + Math.random() * 10) + "s";
 
+
       particle.style.animationDelay =
         Math.random() * 10 + "s";
+
 
       particles.appendChild(
         particle
       );
+
     }
 
 
     /* =====================================================
        ANNÉE
-    ===================================================== */
+       ===================================================== */
 
     document
       .getElementById("year")
@@ -1050,7 +1984,7 @@
 
     /* =====================================================
        DONNÉES
-    ===================================================== */
+       ===================================================== */
 
     let totalPoints =
       Number(
@@ -1062,7 +1996,7 @@
 
     /* =====================================================
        NIVEAU
-    ===================================================== */
+       ===================================================== */
 
     function getLevel(points) {
 
@@ -1074,39 +2008,58 @@
 
 
     /* =====================================================
-       MISE À JOUR DU PROFIL
-    ===================================================== */
+       PROFIL
+       ===================================================== */
 
     function updateProfile() {
 
       const level =
-        getLevel(totalPoints);
+        getLevel(
+          totalPoints
+        );
+
 
       const currentXP =
         totalPoints % 100;
 
+
       document
-        .getElementById("pointsStat")
+        .getElementById(
+          "pointsStat"
+        )
         .textContent =
         totalPoints;
 
+
       document
-        .getElementById("levelStat")
+        .getElementById(
+          "levelStat"
+        )
         .textContent =
         level;
 
+
       document
-        .getElementById("profileLevel")
+        .getElementById(
+          "profileLevel"
+        )
         .textContent =
         "Niveau " + level;
 
-      document
-        .getElementById("progressText")
-        .textContent =
-        currentXP + " / 100 XP";
 
       document
-        .getElementById("progressBar")
+        .getElementById(
+          "progressText"
+        )
+        .textContent =
+        currentXP +
+        " / 100 XP";
+
+
+      document
+        .getElementById(
+          "progressBar"
+        )
         .style.width =
         currentXP + "%";
 
@@ -1115,16 +2068,18 @@
 
     /* =====================================================
        AJOUT DE POINTS
-    ===================================================== */
+       ===================================================== */
 
     function addPoints(amount) {
 
       totalPoints += amount;
 
+
       localStorage.setItem(
         "gogo_points",
         totalPoints
       );
+
 
       updateProfile();
 
@@ -1133,7 +2088,7 @@
 
     /* =====================================================
        MINI-JEU
-    ===================================================== */
+       ===================================================== */
 
     let gameScore = 0;
 
@@ -1168,25 +2123,30 @@
         return;
       }
 
+
       gameRunning = true;
 
       gameScore = 0;
 
       gameTime = 10;
 
+
       gameScoreElement
         .textContent =
         "0";
+
 
       gameTimer
         .textContent =
         "⏱️ 10 secondes";
 
+
       timer =
         setInterval(
-          function () {
+          function() {
 
             gameTime--;
+
 
             gameTimer
               .textContent =
@@ -1194,22 +2154,34 @@
               gameTime +
               " secondes";
 
-            if (gameTime <= 0) {
 
-              clearInterval(timer);
+            if (
+              gameTime <= 0
+            ) {
+
+              clearInterval(
+                timer
+              );
+
+
+              timer = null;
+
 
               gameRunning =
                 false;
 
+
               addPoints(
                 gameScore
               );
+
 
               gameTimer
                 .textContent =
                 "🎉 Partie terminée : +" +
                 gameScore +
                 " points";
+
 
               showNotification(
                 "+" +
@@ -1228,7 +2200,8 @@
 
     tapButton.addEventListener(
       "click",
-      function () {
+      function() {
+
 
         if (!gameRunning) {
 
@@ -1236,9 +2209,11 @@
 
         }
 
+
         if (gameRunning) {
 
           gameScore++;
+
 
           gameScoreElement
             .textContent =
@@ -1251,29 +2226,42 @@
 
 
     /* =====================================================
-       RESET DU JEU
-    ===================================================== */
+       RESET JEU
+       ===================================================== */
 
     document
-      .getElementById("resetGame")
+      .getElementById(
+        "resetGame"
+      )
       .addEventListener(
         "click",
-        function () {
+        function() {
 
-          clearInterval(timer);
+
+          clearInterval(
+            timer
+          );
+
+
+          timer = null;
+
 
           gameRunning =
             false;
 
+
           gameScore =
             0;
+
 
           gameTime =
             10;
 
+
           gameScoreElement
             .textContent =
             "0";
+
 
           gameTimer
             .textContent =
@@ -1284,33 +2272,39 @@
 
 
     /* =====================================================
-       NOTIFICATIONS
-    ===================================================== */
+       NOTIFICATION
+       ===================================================== */
 
     let notificationTimeout;
 
 
-    function showNotification(message) {
+    function showNotification(
+      message
+    ) {
 
       const notification =
         document.getElementById(
           "notification"
         );
 
+
       notification.textContent =
         message;
+
 
       notification.classList.add(
         "show"
       );
 
+
       clearTimeout(
         notificationTimeout
       );
 
+
       notificationTimeout =
         setTimeout(
-          function () {
+          function() {
 
             notification.classList.remove(
               "show"
@@ -1324,1304 +2318,102 @@
 
 
     /* =====================================================
-       INITIALISATION
-    ===================================================== */
-
-    updateProfile();
-
-  </script>
-
-</body>
-</html>: Arial, Helvetica, sans-serif;
-      color: #ffffff;
-
-      background:
-        radial-gradient(
-          circle at 50% -10%,
-          #244b91 0%,
-          #111b35 30%,
-          #070b16 70%
-        );
-
-      overflow-x: hidden;
-    }
-
-    button,
-    a {
-      font-family: inherit;
-    }
-
-    .particles {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      overflow: hidden;
-      z-index: -1;
-    }
-
-    .particle {
-      position: absolute;
-      width: 4px;
-      height: 4px;
-      background: rgba(120, 180, 255, 0.6);
-      border-radius: 50%;
-      animation: floatParticle linear infinite;
-    }
-
-    @keyframes floatParticle {
-      from {
-        transform: translateY(110vh);
-        opacity: 0;
-      }
-
-      20% {
-        opacity: 1;
-      }
-
-      80% {
-        opacity: 1;
-      }
-
-      to {
-        transform: translateY(-10vh);
-        opacity: 0;
-      }
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(5, 8, 16, 0.82);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .navbar {
-      max-width: 1100px;
-      margin: auto;
-      min-height: 68px;
-      padding: 10px 18px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 9px;
-      font-size: 22px;
-      font-weight: 900;
-      color: #72aaff;
-      text-decoration: none;
-      white-space: nowrap;
-    }
-
-    .logo-icon {
-      width: 38px;
-      height: 38px;
-      display: grid;
-      place-items: center;
-      border-radius: 12px;
-      background: linear-gradient(135deg, #3478f6, #6f9fff);
-      box-shadow: 0 0 25px rgba(52,120,246,0.35);
-      font-size: 20px;
-    }
-
-    .menu {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-    }
-
-    .menu a {
-      color: #dce6ff;
-      text-decoration: none;
-      font-size: 14px;
-      padding: 9px 11px;
-      border-radius: 9px;
-      transition: 0.2s;
-    }
-
-    .menu a:hover {
-      background: rgba(255,255,255,0.08);
-      color: white;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 0 18px;
-    }
-
-    .hero {
-      min-height: calc(100vh - 68px);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 50px 10px;
-    }
-
-    .status {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(58,129,255,0.1);
-      border: 1px solid rgba(95,157,255,0.3);
-      color: #a9caff;
-      font-size: 13px;
-      margin-bottom: 22px;
-      animation: appear 0.7s ease;
-    }
-
-    .status-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #55e68a;
-      box-shadow: 0 0 12px #55e68a;
-    }
-
-    @keyframes appear {
-      from {
-        opacity: 0;
-        transform: translateY(15px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .hero h1 {
-      font-size: clamp(52px, 15vw, 105px);
-      line-height: 0.9;
-      font-weight: 1000;
-      letter-spacing: -5px;
-      background: linear-gradient(
-        90deg,
-        #ffffff 10%,
-        #77adff 50%,
-        #b6d3ff 90%
-      );
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      animation: heroTitle 0.8s ease;
-    }
-
-    @keyframes heroTitle {
-      from {
-        opacity: 0;
-        transform: scale(0.9);
-      }
-
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    .hero h2 {
-      margin-top: 16px;
-      font-size: clamp(20px, 5vw, 30px);
-      color: #d8e4ff;
-      font-weight: 700;
-    }
-
-    .hero p {
-      max-width: 650px;
-      margin-top: 18px;
-      color: #9faac2;
-      font-size: 16px;
-      line-height: 1.65;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 28px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      min-height: 48px;
-      padding: 13px 20px;
-      border: none;
-      border-radius: 13px;
-      color: white;
-      font-size: 15px;
-      font-weight: 800;
-      text-decoration: none;
-      cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.15s;
-    }
-
-    .btn:active {
-      transform: scale(0.95);
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #3478f6, #5794ff);
-      box-shadow: 0 10px 30px rgba(52,120,246,0.3);
-    }
-
-    .btn-secondary {
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.12);
-    }
-
-    .stats {
-      width: min(700px, 100%);
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-top: 45px;
-    }
-
-    .stat {
-      padding: 20px 10px;
-      border-radius: 17px;
-      background: rgba(255,255,255,0.045);
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .stat-number {
-      display: block;
-      font-size: 25px;
-      font-weight: 900;
-      color: #76adff;
-    }
-
-    .stat-label {
-      display: block;
-      margin-top: 5px;
-      color: #8e99b1;
-      font-size: 12px;
-    }
-
-    section {
-      padding: 85px 0;
-    }
-
-    .section-heading {
-      text-align: center;
-      margin-bottom: 35px;
-    }
-
-    .section-heading small {
-      color: #6da5ff;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 11px;
-    }
-
-    .section-heading h2 {
-      margin-top: 9px;
-      font-size: clamp(30px, 7vw, 45px);
-    }
-
-    .section-heading p {
-      max-width: 600px;
-      margin: 12px auto 0;
-      color: #909bb2;
-      line-height: 1.5;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
-    .card {
-      position: relative;
-      padding: 25px;
-      min-height: 200px;
-      border-radius: 20px;
-      background: linear-gradient(
-        145deg,
-        rgba(255,255,255,0.07),
-        rgba(255,255,255,0.025)
-      );
-      border: 1px solid rgba(255,255,255,0.09);
-      overflow: hidden;
-      transition: transform 0.25s, border-color 0.25s;
-    }
-
-    .card:hover {
-      transform: translateY(-7px);
-      border-color: rgba(105,165,255,0.35);
-    }
-
-    .card::after {
-      content: "";
-      position: absolute;
-      width: 130px;
-      height: 130px;
-      right: -60px;
-      bottom: -70px;
-      border-radius: 50%;
-      background: rgba(80,145,255,0.1);
-      filter: blur(5px);
-    }
-
-    .card-icon {
-      width: 55px;
-      height: 55px;
-      display: grid;
-      place-items: center;
-      border-radius: 16px;
-      background: rgba(62,126,240,0.13);
-      font-size: 27px;
-      margin-bottom: 18px;
-    }
-
-    .card h3 {
-      font-size: 19px;
-      margin-bottom: 9px;
-    }
-
-    .card p {
-      color: #9ca7bc;
-      line-height: 1.55;
-      font-size: 14px;
-    }
-
-    .game-box {
-      max-width: 700px;
-      margin: auto;
-      padding: 25px;
-      text-align: center;
-      border-radius: 24px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .game-score {
-      font-size: 35px;
-      font-weight: 900;
-      color: #72aaff;
-    }
-
-    .game-text {
-      margin: 8px 0 20px;
-      color: #a0abc1;
-    }
-
-    .tap-button {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 0;
-      background: linear-gradient(145deg, #3478f6, #6ca5ff);
-      color: white;
-      font-size: 50px;
-      cursor: pointer;
-      box-shadow: 0 15px 50px rgba(52,120,246,0.3);
-      transition: transform 0.08s;
-    }
-
-    .tap-button:active {
-      transform: scale(0.9);
-    }
-
-    .game-timer {
-      margin-top: 18px;
-      color: #8f9ab1;
-      font-size: 13px;
-    }
-
-    .profile {
-      max-width: 700px;
-      margin: auto;
-      padding: 28px;
-      border-radius: 22px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.09);
-    }
-
-    .profile-top {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 25px;
-    }
-
-    .avatar {
-      width: 64px;
-      height: 64px;
-      display: grid;
-      place-items: center;
-      border-radius: 20px;
-      background: linear-gradient(135deg, #3478f6, #75aaff);
-      font-size: 28px;
-      font-weight: 900;
-    }
-
-    .profile-name {
-      font-size: 21px;
-      font-weight: 900;
-    }
-
-    .profile-level {
-      margin-top: 5px;
-      color: #8491aa;
-      font-size: 13px;
-    }
-
-    .progress {
-      height: 10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.08);
-      overflow: hidden;
-    }
-
-    .progress-bar {
-      width: 0%;
-      height: 100%;
-      border-radius: inherit;
-      background: linear-gradient(90deg, #3478f6, #76adff);
-      transition: width 0.4s;
-    }
-
-    .progress-info {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 8px;
-      color: #7f8ba4;
-      font-size: 12px;
-    }
-
-    .contact {
-      text-align: center;
-      padding: 40px 20px;
-      border-radius: 25px;
-      background: linear-gradient(
-        145deg,
-        rgba(52,120,246,0.13),
-        rgba(255,255,255,0.035)
-      );
-      border: 1px solid rgba(100,165,255,0.18);
-    }
-
-    .contact h2 {
-      font-size: 30px;
-      margin-bottom: 10px;
-    }
-
-    .contact p {
-      max-width: 550px;
-      margin: auto auto 22px;
-      color: #99a4ba;
-      line-height: 1.55;
-    }
-
-    footer {
-      padding: 35px 20px;
-      text-align: center;
-      border-top: 1px solid rgba(255,255,255,0.06);
-      color: #69748a;
-      font-size: 12px;
-    }
-
-    .notification {
-      position: fixed;
-      left: 50%;
-      bottom: 25px;
-      transform: translate(-50%, 100px);
-      padding: 13px 18px;
-      border-radius: 12px;
-      background: rgba(15,22,38,0.96);
-      border: 1px solid rgba(105,165,255,0.3);
-      box-shadow: 0 15px 40px rgba(0,0,0,0.35);
-      color: white;
-      font-size: 14px;
-      z-index: 999;
-      opacity: 0;
-      transition: 0.3s;
-    }
-
-    .notification.show {
-      opacity: 1;
-      transform: translate(-50%, 0);
-    }
-
-    @media (max-width: 720px) {
-
-      .navbar {
-        flex-direction: column;
-        padding: 11px 12px;
-      }
-
-      .menu {
-        width: 100%;
-        justify-content: center;
-      }
-
-      .menu a {
-        font-size: 12px;
-        padding: 8px;
-      }
-
-      .hero {
-        min-height: calc(100vh - 100px);
-        padding-top: 30px;
-      }
-
-      .hero h1 {
-        letter-spacing: -3px;
-      }
-
-      .hero p {
-        font-size: 15px;
-      }
-
-      .stats {
-        gap: 8px;
-        margin-top: 35px;
-      }
-
-      .stat {
-        padding: 16px 5px;
-      }
-
-      .stat-number {
-        font-size: 21px;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      section {
-        padding: 60px 0;
-      }
-
-      .profile {
-        padding: 22px;
-      }
-    }
-
-    @media (max-width: 400px) {
-
-      .menu a {
-        font-size: 11px;
-        margin: 0;
-      }
-
-      .logo {
-        font-size: 19px;
-      }
-
-      .tap-button {
-        width: 130px;
-        height: 130px;
-        font-size: 42px;
-      }
-    }
-
-  </style>
-</head>
-
-<body>
-
-  <div class="particles" id="particles"></div>
-
-  <header>
-
-    <nav class="navbar">
-
-      <a href="#accueil" class="logo">
-
-        <span class="logo-icon">
-          G
-        </span>
-
-        GoGo
-
-      </a>
-
-      <div class="menu">
-
-        <a href="#accueil">
-          Accueil
-        </a>
-
-        <a href="#fonctionnalites">
-          Fonctions
-        </a>
-
-        <a href="#jeu">
-          Jeu
-        </a>
-
-        <a href="#profil">
-          Profil
-        </a>
-
-      </div>
-
-    </nav>
-
-  </header>
-
-  <main>
-
-    <section id="accueil" class="hero">
-
-      <div class="status">
-
-        <span class="status-dot"></span>
-
-        Site en ligne
-
-      </div>
-
-      <h1>
-        GoGo
-      </h1>
-
-      <h2>
-        Ton nouvel espace Web 🚀
-      </h2>
-
-      <p>
-        Bienvenue sur GoGo.
-        Découvre les fonctionnalités,
-        joue, gagne des points et
-        fais évoluer ton profil.
-      </p>
-
-      <div class="hero-buttons">
-
-        <a href="#jeu" class="btn btn-primary">
-          🎮 Jouer maintenant
-        </a>
-
-        <a href="#fonctionnalites" class="btn btn-secondary">
-          ✨ Découvrir
-        </a>
-
-      </div>
-
-      <div class="stats">
-
-        <div class="stat">
-
-          <span class="stat-number" id="pointsStat">
-            0
-          </span>
-
-          <span class="stat-label">
-            Points
-          </span>
-
-        </div>
-
-        <div class="stat">
-
-          <span class="stat-number" id="levelStat">
-            1
-          </span>
-
-          <span class="stat-label">
-            Niveau
-          </span>
-
-        </div>
-
-        <div class="stat">
-
-          <span class="stat-number">
-            ∞
-          </span>
-
-          <span class="stat-label">
-            Possibilités
-          </span>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <section id="fonctionnalites">
-
-      <div class="section-heading">
-
-        <small>
-          GoGo
-        </small>
-
-        <h2>
-          Tout commence ici
-        </h2>
-
-        <p>
-          Une base prête à accueillir
-          tes prochaines idées.
-        </p>
-
-      </div>
-
-      <div class="cards">
-
-        <div class="card">
-
-          <div class="card-icon">
-            🎮
-          </div>
-
-          <h3>
-            Jeux
-          </h3>
-
-          <p>
-            Ajoute tes propres jeux
-            directement dans ton site
-            et fais gagner des points
-            aux joueurs.
-          </p>
-
-        </div>
-
-        <div class="card">
-
-          <div class="card-icon">
-            🏆
-          </div>
-
-          <h3>
-            Progression
-          </h3>
-
-          <p>
-            Les points sont sauvegardés
-            automatiquement sur l'appareil
-            grâce au stockage du navigateur.
-          </p>
-
-        </div>
-
-        <div class="card">
-
-          <div class="card-icon">
-            📱
-          </div>
-
-          <h3>
-            Mobile
-          </h3>
-
-          <p>
-            L'interface est conçue pour
-            fonctionner confortablement
-            sur un téléphone.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <section id="jeu">
-
-      <div class="section-heading">
-
-        <small>
-          Mini-jeu
-        </small>
-
-        <h2>
-          Tape pour gagner !
-        </h2>
-
-        <p>
-          Appuie sur le bouton le plus
-          rapidement possible.
-        </p>
-
-      </div>
-
-      <div class="game-box">
-
-        <div class="game-score" id="gameScore">
-          0
-        </div>
-
-        <div class="game-text">
-          points cette partie
-        </div>
-
-        <button
-          class="tap-button"
-          id="tapButton">
-
-          ⚡
-
-        </button>
-
-        <div class="game-timer" id="gameTimer">
-          Partie prête
-        </div>
-
-        <div style="margin-top:20px">
-
-          <button
-            class="btn btn-secondary"
-            id="resetGame">
-
-            🔄 Réinitialiser
-
-          </button>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <section id="profil">
-
-      <div class="section-heading">
-
-        <small>
-          Mon espace
-        </small>
-
-        <h2>
-          Ton profil
-        </h2>
-
-      </div>
-
-      <div class="profile">
-
-        <div class="profile-top">
-
-          <div class="avatar">
-            G
-          </div>
-
-          <div>
-
-            <div class="profile-name">
-              Joueur GoGo
-            </div>
-
-            <div class="profile-level" id="profileLevel">
-              Niveau 1
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="progress">
-
-          <div
-            class="progress-bar"
-            id="progressBar">
-          </div>
-
-        </div>
-
-        <div class="progress-info">
-
-          <span id="progressText">
-            0 / 100 XP
-          </span>
-
-          <span>
-            Prochain niveau
-          </span>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <section id="contact">
-
-      <div class="contact">
-
-        <h2>
-          🚀 Continue à construire
-        </h2>
-
-        <p>
-          Ton site est maintenant une base
-          que tu peux personnaliser avec
-          tes jeux, tes pages et tes propres
-          fonctionnalités.
-        </p>
-
-        <button
-          class="btn btn-primary"
-          onclick="showNotification('Bienvenue sur GoGo ! 🚀')">
-
-          ✨ Tester GoGo
-
-        </button>
-
-      </div>
-
-    </section>
-
-  </main>
-
-  <footer>
-
-    © <span id="year"></span>
-    GoGo — Tous droits réservés.
-
-  </footer>
-
-  <div class="notification" id="notification">
-    Message
-  </div>
-
-  <script>
-
-    /* =====================================================
-       PARTICULES
-    ===================================================== */
-
-    const particles =
-      document.getElementById("particles");
-
-    for (let i = 0; i < 35; i++) {
-
-      const particle =
-        document.createElement("div");
-
-      particle.className =
-        "particle";
-
-      particle.style.left =
-        Math.random() * 100 + "%";
-
-      particle.style.animationDuration =
-        (5 + Math.random() * 10) + "s";
-
-      particle.style.animationDelay =
-        Math.random() * 10 + "s";
-
-      particles.appendChild(
-        particle
-      );
-    }
-
-
-    /* =====================================================
-       ANNÉE
-    ===================================================== */
+       CONTACT
+       ===================================================== */
 
     document
-      .getElementById("year")
-      .textContent =
-      new Date().getFullYear();
-
-
-    /* =====================================================
-       DONNÉES
-    ===================================================== */
-
-    let totalPoints =
-      Number(
-        localStorage.getItem(
-          "gogo_points"
-        )
-      ) || 0;
-
-
-    /* =====================================================
-       NIVEAU
-    ===================================================== */
-
-    function getLevel(points) {
-
-      return Math.floor(
-        points / 100
-      ) + 1;
-
-    }
-
-
-    /* =====================================================
-       MISE À JOUR DU PROFIL
-    ===================================================== */
-
-    function updateProfile() {
-
-      const level =
-        getLevel(totalPoints);
-
-      const currentXP =
-        totalPoints % 100;
-
-      document
-        .getElementById("pointsStat")
-        .textContent =
-        totalPoints;
-
-      document
-        .getElementById("levelStat")
-        .textContent =
-        level;
-
-      document
-        .getElementById("profileLevel")
-        .textContent =
-        "Niveau " + level;
-
-      document
-        .getElementById("progressText")
-        .textContent =
-        currentXP + " / 100 XP";
-
-      document
-        .getElementById("progressBar")
-        .style.width =
-        currentXP + "%";
-
-    }
-
-
-    /* =====================================================
-       AJOUT DE POINTS
-    ===================================================== */
-
-    function addPoints(amount) {
-
-      totalPoints += amount;
-
-      localStorage.setItem(
-        "gogo_points",
-        totalPoints
-      );
-
-      updateProfile();
-
-    }
-
-
-    /* =====================================================
-       MINI-JEU
-    ===================================================== */
-
-    let gameScore = 0;
-
-    let gameRunning = false;
-
-    let gameTime = 10;
-
-    let timer = null;
-
-
-    const tapButton =
-      document.getElementById(
-        "tapButton"
-      );
-
-
-    const gameScoreElement =
-      document.getElementById(
-        "gameScore"
-      );
-
-
-    const gameTimer =
-      document.getElementById(
-        "gameTimer"
-      );
-
-
-    function startGame() {
-
-      if (gameRunning) {
-        return;
-      }
-
-      gameRunning = true;
-
-      gameScore = 0;
-
-      gameTime = 10;
-
-      gameScoreElement
-        .textContent =
-        "0";
-
-      gameTimer
-        .textContent =
-        "⏱️ 10 secondes";
-
-      timer =
-        setInterval(
-          function () {
-
-            gameTime--;
-
-            gameTimer
-              .textContent =
-              "⏱️ " +
-              gameTime +
-              " secondes";
-
-            if (gameTime <= 0) {
-
-              clearInterval(timer);
-
-              gameRunning =
-                false;
-
-              addPoints(
-                gameScore
-              );
-
-              gameTimer
-                .textContent =
-                "🎉 Partie terminée : +" +
-                gameScore +
-                " points";
-
-              showNotification(
-                "+" +
-                gameScore +
-                " points !"
-              );
-
-            }
-
-          },
-          1000
-        );
-
-    }
-
-
-    tapButton.addEventListener(
-      "click",
-      function () {
-
-        if (!gameRunning) {
-
-          startGame();
-
-        }
-
-        if (gameRunning) {
-
-          gameScore++;
-
-          gameScoreElement
-            .textContent =
-            gameScore;
-
-        }
-
-      }
-    );
-
-
-    /* =====================================================
-       RESET DU JEU
-    ===================================================== */
-
-    document
-      .getElementById("resetGame")
+      .getElementById(
+        "contactForm"
+      )
       .addEventListener(
-        "click",
-        function () {
-
-          clearInterval(timer);
-
-          gameRunning =
-            false;
-
-          gameScore =
-            0;
-
-          gameTime =
-            10;
-
-          gameScoreElement
-            .textContent =
-            "0";
-
-          gameTimer
-            .textContent =
-            "Partie prête";
-
-        }
-      );
+        "submit",
+        function(event) {
 
 
-    /* =====================================================
-       NOTIFICATIONS
-    ===================================================== */
-
-    let notificationTimeout;
+          event.preventDefault();
 
 
-    function showNotification(message) {
+          const name =
+            document
+              .getElementById(
+                "contactName"
+              )
+              .value
+              .trim();
 
-      const notification =
-        document.getElementById(
-          "notification"
-        );
 
-      notification.textContent =
-        message;
+          const email =
+            document
+              .getElementById(
+                "contactEmail"
+              )
+              .value
+              .trim();
 
-      notification.classList.add(
-        "show"
-      );
 
-      clearTimeout(
-        notificationTimeout
-      );
+          const subject =
+            document
+              .getElementById(
+                "contactSubject"
+              )
+              .value
+              .trim();
 
-      notificationTimeout =
-        setTimeout(
-          function () {
 
-            notification.classList.remove(
-              "show"
+          const message =
+            document
+              .getElementById(
+                "contactMessage"
+              )
+              .value
+              .trim();
+
+
+          const destination =
+            "Ghofranehamdi2025@gmail.com";
+
+
+          const emailBody =
+            [
+              "Bonjour GoGo,",
+              "",
+              "Nom : " + name,
+              "E-mail : " + email,
+              "",
+              "Message :",
+              message,
+              "",
+              "Merci."
+            ].join("\n");
+
+
+          const mailto =
+            "mailto:" +
+            destination +
+            "?subject=" +
+            encodeURIComponent(
+              subject
+            ) +
+            "&body=" +
+            encodeURIComponent(
+              emailBody
             );
 
-          },
-          2500
-        );
 
-    }
+          window.location.href =
+            mailto;
+
+        }
+      );
 
 
     /* =====================================================
        INITIALISATION
-    ===================================================== */
+       ===================================================== */
 
     updateProfile();
 
   </script>
 
 </body>
-</html>
+            </html>
